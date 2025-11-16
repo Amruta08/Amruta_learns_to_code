@@ -9,8 +9,128 @@ My Personal coding notebook
 |   \---Python
 +---02_DSA
 +---03_Web_dev
+|   +---00_HTML
+|   +---01_CSS
+|   |   +---CSS concepts
+|   |   |   +---flexbox
+|   |   |   +---grid
+|   |   |   +---Responsive
+|   |   |   \---styles
+|   |   +---CSS tables
+|   |   |   +---table 1
+|   |   |   \---table 2
+|   |   \---Practice
+|   |       +---Angela Yu course
+|   |       |   +---Css margin chall
+|   |       |   |   \---styles
+|   |       |   +---Css pos chall
+|   |       |   |   \---styles
+|   |       |   +---debug
+|   |       |   \---food fansite
+|   |       \---Colte code camp
+|   |           +---css box model
+|   |           +---css responsive
+|   |           \---css selectors
+|   +---02_JavaScript
+|   |   +---Concepts
+|   |   |   \---Asynchronus JS
+|   |   \---Practice
+|   |       +---10days_hackerrank
+|   |       +---Angela Yu course
+|   |       \---cookie
+|   |           \---images
+|   +---03_DOM
+|   |   +---Concepts
+|   |   \---Examples
+|   |       +---bg color
+|   |       +---dot
+|   |       +---motion
+|   |       \---Moving pic
+|   |           \---img
+|   +---04_JQuery
+|   |   \---concepts
+|   |       \---Asynchronus JS
+|   +---05_Node & express
+|   +---06_MongoDB & Mongoose
+|   +---07_React Js
+|   |   \---Reference
+|   |       +---01_introduction-to-jsx
+|   |       |   +---public
+|   |       |   \---src
+|   |       +---02_jsx-code-challenge
+|   |       |   +---public
+|   |       |   \---src
+|   |       +---03_javascript-expressions-in-jsx
+|   |       |   +---public
+|   |       |   \---src
+|   |       +---04_javascript-expressions-in-jsx-practice
+|   |       |   +---public
+|   |       |   \---src
+|   |       +---05_jsx-attributes-and-styling
+|   |       |   +---public
+|   |       |   \---src
+|   |       +---06_inline-styling-in-jsx
+|   |       |   +---public
+|   |       |   \---src
+|   |       +---07_react-styling-practice
+|   |       |   +---public
+|   |       |   \---src
+|   |       +---08_react-components
+|   |       |   +---public
+|   |       |   \---src
+|   |       +---09_react-components-practice
+|   |       |   +---public
+|   |       |   \---src
+|   |       |       \---Components
+|   |       +---10_es6-import-export-and-modules
+|   |       |   +---public
+|   |       |   \---src
+|   |       +---11_es6-import-export-practice
+|   |       |   +---public
+|   |       |   \---src
+|   |       +---12_react-props
+|   |       |   +---public
+|   |       |   \---src
+|   |       +---13_react-props-practice
+|   |       |   +---public
+|   |       |   \---src
+|   |       |       \---components
+|   |       +---14_react-devtools
+|   |       |   +---.codesandbox
+|   |       |   +---public
+|   |       |   \---src
+|   |       |       \---components
+|   |       +---15_mapping-components
+|   |       |   +---.codesandbox
+|   |       |   +---public
+|   |       |   \---src
+|   |       |       \---components
+|   |       +---16_mapping-components-practice
+|   |       |   +---.codesandbox
+|   |       |   +---public
+|   |       |   \---src
+|   |       |       \---components
+|   |       +---17_map-filter-reduce
+|   |       |   +---.codesandbox
+|   |       |   +---public
+|   |       |   \---src
+|   |       +---18_es6-arrow-functions
+|   |       |   +---.codesandbox
+|   |       |   +---public
+|   |       |   \---src
+|   |       |       \---components
+|   |       +---19_conditional-rendering
+|   |       |   +---public
+|   |       |   \---src
+|   |       |       \---components
+|   |       \---20_conditional-rendering-practice
+|   |           +---public
+|   |           \---src
+|   |               \---components
+|   \---Reference_cheatsheets
 +---04_Databases
 +---05_Blockchain
+|   \---Solidity
 +---06_AI_ML_DS
 |   +---01_ML
 |   |   +---00_DS Libraries
