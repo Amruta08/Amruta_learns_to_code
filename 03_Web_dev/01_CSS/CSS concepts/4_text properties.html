@@ -1,0 +1,165 @@
+
+<!--FONT SIZE PROPERTY-->
+<h1>Heading 1</h1>
+<p>Lorem ipsum dolor sit amet, consectetur ,<a href="#">adipiscing</a> elit, sed do eiusmod tempor incididunt 
+ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+pa qui officia deserunt mollit anim id est laborum.</p>
+
+<style>
+    h1{
+        font-size: 60px;
+    }
+
+    p{
+        font-size: 30px;
+    }
+
+    p a{
+        font-size: 10px;
+    }
+</style>
+
+
+<!--TEXT ALIGN PROPERTY-->
+<h2>Heading 2</h2>
+
+<li><a href="#"> link 1</a></li>
+<li><a href="#"> link 2</a></li>
+<li><p>para</p></li>
+
+
+<style>
+    h2{
+        background-color: aqua;
+        text-align: right;
+    }
+
+    li a{
+        background-color: aqua;
+        text-align: right;  /* Doesn't work for inline elements*/
+    }
+
+    li a{
+        background-color: aqua;
+        text-align: right;  /* works for inline-block elements if we specify extra width*/
+        display: inline-block ;
+        width: 300px;
+    }
+
+    li p{
+        background-color: aqua;
+        text-align: center;
+    }
+</style>
+
+<!--FONT WEIGHT PROPERTY-->
+
+<p class="fw">orem ipsum dolor</p>
+
+<style>
+    /* normal is same as 400 and bold is same as 700*/
+    .fw{
+        /* font-weight: 400; */
+        font-weight: normal;
+        font-weight: 700;
+        font-weight: bold;
+    }
+</style>
+
+<!--FONT STYLE PROPERTY-->
+
+<h3>tempor incididunt </h3>
+<em>MY BRAND</em>
+
+<style>
+    h3{
+        /* font-style: italic; */
+        font-style: oblique;
+    }
+
+    em{
+        font-style: normal;
+    }
+</style>
+
+<!--FONT FAMILY PROPERTY-->
+
+<h4>Ut enim ad minim venia</h4>
+
+<style>
+    h4{
+        font-family: Verdana;
+    }
+
+    /* font stack */
+    h3{
+        font-family: Futura, Helvetica,sans-serif ;
+;
+    }
+</style>
+
+<!--LINE HEIGHT/ WORD SPACING/ LETTER SPACING PROPERTY-->
+<h6>Lorem ipsum dolor sit amet, consectetur ,elit, sed do eiusmod tempor incididunt </h6>
+
+<style>
+    h6{
+        line-height: 100px;
+        word-spacing: 50px;
+        letter-spacing: 20px;
+    }
+</style>
+
+<!--TEXT DECORATION PROPERTY-->
+<ins class="null">Underlined text</ins>
+<ins class="td">Underlined text</ins>
+<b>TEXT</b>
+<h1 class="ov">Heading 1</h1>
+<h1 class="ov1">Heading 1</h1>
+
+<style>
+    .td{
+        text-decoration: none; 
+    }
+    b{
+        text-decoration: underline wavy pink;
+    }
+    .ov{
+        text-decoration: overline dotted lawngreen;
+    }
+    .ov1{
+        text-decoration: line-through  red;
+    }
+</style>
+
+
+<!-- TEXT TRANSFROM PROPERTY -->
+<h3 class="tt">Lorem ipsum dolor sit</h3>
+<h3 class ='tt1'>Lorem ipsum dolor sit</h3>
+
+<style>
+    .tt{
+        /* text-transform: capitalize; */
+        /* text-transform: uppercase; */
+        text-transform: lowercase;
+
+    }
+</style>
+
+<!-- TEXT SHADOW PROPERTY -->
+<h1 class="tdec">Lorem ipsum dolor sit</h1>
+<h1 class ='tdec1'>Lorem ipsum dolor sit</h1>
+
+<style>
+    .tdec{
+        /* text-shadow: 10px 10px magenta; */
+        /* text-shadow: 10px -10px magenta; */
+        text-shadow: -5px 5px 5px magenta;
+        /* text-shadow: -5px 5px 20px magenta; */
+    }
+
+    .tdec1{
+        text-shadow: -5px 5px 5px magenta, -10px 10px cyan; 
+        /* text-shadow: -5px 5px 20px magenta; */
+    }
+</style>
+

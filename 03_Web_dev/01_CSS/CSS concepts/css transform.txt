@@ -1,0 +1,195 @@
+**************************************************************************
+
+CSS Transforms 
+To transform elements by rotation, scaling, skew etc.
+
+//rotate by 45 degrees
+transform: rotate(45deg)
+
+
+scale :-
+  no. > 1 (increase size)
+  no. < 1 (decrease size) 
+
+// increase the size of element by 3 times its size
+transform: scale(3);
+
+
+// decrease the size of element by half
+transform: scale(0.5);
+
+
+scaleX(), scaleY() --> changes the scale along width or height
+
+// increase width of element by 2 times its width
+transform: scaleX(2);
+
+// increase height of element by 2 times its height
+transform: scaleY(2);
+
+skew :- skew's the element either X axis or Y axis
+
+// skew element 20 deg along X axis
+transform: skewX(20deg);
+
+// skew element 20 deg along Y axis
+transform: skewY(20deg);
+
+
+translate :- move element around 
+
+// move element by 50 px to right
+transform: translate(50px)
+
+// move element by 50 px to left
+transform: translate(-50px)
+
+// move element by 50 px to right and 100px down
+transform: translate(50px, 100px)
+
+
+alternatively you can move element along X or Y using translateX() 
+or translateY()
+
+transform: translateX(50px)
+transform: translateY(100px)
+
+matrix() --> shorthand for scale, skew and transalate property
+
+transform: matrix(scaleX, skewY, skewX, scaleY, translateX, translateY);
+
+
+transform: matrix(2, 1, 1, 2, 70, -200);
+
+
+
+3-d transforms
+
+div:hover {
+    cursor: pointer;
+    transition: all 2s linear;
+    transform: rotateY(360deg);
+}
+
+**************************************************************************
+CSS transition : allows to smoothly change property values over a given duration
+
+transition-property --> what property we are looking to transition
+                        width, height, bgcolor etc.
+                    --> you will specify transition properties in hover
+
+transition-property: width
+div:hover{ width:250px; }
+
+//specify a delay before the change is trigrred
+transition-delay: 1s;
+
+// specifies how much time the transition should take
+transation-duration: .5s
+
+// controls how the element transitions
+transition-timing-function: ease-in
+
+ease-in: transition start's off slower and then speeds up
+ease-out: transition start's normally and then slows down
+linear: transition has constant speed
+
+
+// provide custom timing fuction using cubic-bezier() function
+cubic-bezier site:- https://cubic-bezier.com/
+
+transition-timing-function: cubic-bezier(.17,.67,.83,.67)
+
+// transition all properties specified in hover smoothly
+transition-property: all
+
+
+// shorthand transition property
+
+transition: property duration timing-function delay;
+
+transition: all .5s liner;
+
+*************************************************************************
+css animations --> for animating our elements and creating some really
+                   cool effects
+
+
+animation-name: square  // you can call it anything
+
+// specifies how long you want this animation to run
+animation-duration: 
+animation-duration: 4s;
+
+// specify the type of movement we want 
+animation-timing-function: linear
+
+// delay animation
+animation-delay: 2s;
+
+// specify how many times we want the animation to play
+// you can specify number or infinite
+animation-iteration-count: infinite
+
+// animation direction specifies how to play the animation
+animation-direction: 
+backward - animation is played backward
+alternate - animation is played forward first then backward
+alternate-reverse - animation is played backward first then forward
+
+
+// animation-fill-mode specifies a style when animation is not playing
+animation-fill-mode: none  //default
+animation-fill-mode: forwards  //animation will keep style from very last keyframe
+animation-fill-mode: backwards  //animation will keep style from very first keyframe
+animation-fill-mode: both  //animation will keep style from both keyframes
+
+//animation-play-state --> species wheter animation is playing or paused
+animation-play-state: paused;
+animation-play-state: running;
+
+// shorthand for animation
+
+animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+animation: square 4s linear 2s infinite alternate backwards running 
+
+
+animations work hand in hand with keyframes property
+keyframes specify what property should be animated and how
+
+you link your animation-name with keyframe 
+@keyframes animation-name
+
+@keyframes square {}
+
+All animations have an beginning and ending animation state
+
+1st method - using from and to
+from{background-color: red;}
+to{background-color: blue;}
+
+// change color of square from red to blue
+@keyframes square {
+from {background-color: red;}
+to {background-color: blue;}
+}
+
+2nd method - using percentages
+// change color of square from red to blue
+@keyframes square {
+0% {background-color: red;}
+100% to{background-color: blue;}
+}
+
+// change color of square from red to lime to powdered to orangered to blue
+@keyframes square {
+0% {background-color: red;}
+25% {background-color: lime;}
+50% {background-color: powderblue;}
+75% {background-color: orangered;}
+100% to{background-color: blue;}
+}
+
+
+
+

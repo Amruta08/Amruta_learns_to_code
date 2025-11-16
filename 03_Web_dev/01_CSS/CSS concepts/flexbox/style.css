@@ -1,0 +1,51 @@
+
+/* CONTAINER */
+#container{
+    width: 1000px;
+    height: 400px;
+    background-color: #4524FB;
+    margin: 80px auto;
+    border-radius: 8px;
+    display: flex;
+    /* flex-direction:row; */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* align-content: space-around; */
+    /* align-items: space-around; */
+
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    
+}
+
+.one{
+    order:3;
+}
+
+.two{
+    order:10;
+    flex: 0 2 40%;
+}
+
+.three{
+    order:4;
+}
+
+.four{
+    order:5;
+}
+
+
+/* ITEM*/
+.item{
+    width:100px;
+    height: 40px;
+    background-color: #00D502;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size:2rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 700;
+}

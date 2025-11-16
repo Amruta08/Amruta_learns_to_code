@@ -1,0 +1,354 @@
+<!--***********TABLE OF CONTENTS***********-->
+
+<!-- 
+1. THE 3 WAYS TO APPLY CSS - inline, interal, external
+   linking favicons.
+2. CSS SELECTORS - class, id, 
+3. CSS BOX MODEL - height & width, border, margin, padding
+4. CSS DISPLAY PROPERTY - block, inline, inline-block, none
+5. CSS POSITIONING - relative, absoulute, fixed
+6. CSS WORKING WITH TEXT - styling, sizing, properties
+7. CSS FLOAT AND CLEAR
+-->
+
+
+<!--********************* THE 3 WAYS TO APPLY CSS ************************-->
+
+<!-- each and every website has some default css -->
+
+<!-- INLINE CSS -->
+<!-- style="property : value;"-->
+
+<p style="background-color: crimson;">para 1</p>
+<p style="color:fuchsia;">para 2</p>
+<p style="font-family:courier;">para 3</p>
+<p style="font-size: 300% ;">para 4</p>
+<p style="text-align: center;">para 5</p>
+<p style="border:2px  solid fuchsia;">para 6</p>
+
+
+
+<!-- INTERNAL CSS -->
+<!-- Should be in the head-->
+<!-- syntax -
+
+selector                    selector - who you want to modify
+{                   
+    property : value ;      property - what you want to modify
+}                           value    - how you want to modify 
+
+-->
+<hr>
+
+<style>
+    body{
+        background-color: #EAF6F6;
+    }
+    
+    hr{
+        
+        border-color: hotpink;
+        border-width: 3px;
+        border-style: dotted none none none;     /* default - inset */
+        
+        /* value     effect
+            1        all 4 sides
+            2        1-top & bottom  , 2-left & right
+            3        1-top , 2-left & right , 3-bottom
+            4        1-top , 2-right , 3-bottom , 4-left
+        */
+
+        border-top-style: dotted;
+        width: 30%;
+    }
+</style>
+
+<!-- EXTERNAL CSS -->
+
+<!--link css in html file-->
+<link rel="stylesheet" href="styles/ref.css">
+
+<!--linking favicons-->
+<link rel="icon" href="link">
+
+<!--********************* CSS SELECTORS ************************-->
+
+<!--css selectors (apply style to specific elements)-->
+
+<!-- UNIVERSAL SELECTORS -->
+<!-- Selects everyting -->
+<style>
+    /* *{
+        color:blueviolet;
+    } */
+</style>
+
+<!--CLASS SELECTORS-->
+<h1 class="soup">soup</h1>              <!--  class="name"     -->
+                                        <!--  .name {          -->
+                                        <!--   }               -->  
+<style>                                    
+    .soup{
+        color: cornflowerblue;
+    }
+</style>
+
+<!-- Applying 2 class selectors to 1 elemnt-->
+<h1 class="soup corn">soup</h1>             
+
+<style>                                    
+    .soup{
+        color: cornflowerblue;
+    }
+    .corn{
+        font-size: 23px;
+    }
+</style>
+
+
+
+<!--ID SELECTORS-->
+<h1 id="soup2">soup2</h1>              <!--  id="unique name"     -->
+                                       <!--  #unique name {       -->
+                                       <!--   }                   --> 
+<style>                                    
+    #soup2{
+        color: rgb(111, 199, 126);
+        font-size: 100px;
+    }
+</style>
+
+<!--
+            |       class                  |       id                     |
+            | 1. grp related elements      | 1. unique elements only      |
+            | 2. more than 1 element       | 2. only 1 element can        |
+            |   can have same class value  |    have same id value        |
+            | 3. A single element can have | 3. element cannot have more  |
+            |  more than 1 class selectors |   than 1 id selectors        |
+-->
+
+<!--PSUEDOCLASS-->  
+<!--css changes when arrow is placed-->
+
+<style>
+    h1:hover{
+      color: sandybrown;
+    }
+</style>
+
+
+<!--********************* CSS BOX MODEl ************************-->
+
+<!--box model of styling-->
+<!--every html element is treated as a box-->
+
+<div class="div"></div>
+
+<style>
+    .div{
+        background-color:fuchsia;             /* area - padding - border - margin */
+        height: 200px;
+        width:  200px;
+        border:solid black;
+        border-width: 10px 20px 30px 40px;          
+        padding: 20px;
+        margin: 20px;
+    }
+</style>
+
+<!--********************* CSS DISPLAY PROPERTY ************************-->
+
+<!--css display property-->  <!-- block,inline,inline-block,none -->
+
+<!--  common block elements  - p,h1-h6,div,ol,ul,li,form  --> <!--take full width of page-->
+<!-- block elements can change width-->
+
+<!--  common inline elements - span,img,a -->
+<!-- inline elements can not change width :- therefore inline-block elements -->
+
+<!--display none gets rid of elements-->
+ 
+<p>display property of css</p><br>
+
+<p class="p1">para</p>
+<p class="p1">para</p>
+
+<style>
+    .p1{
+        background-color: red;
+        width : 60px;
+    }
+</style>
+
+<span class="p2">para</span>
+<span class="p2">para</span>
+
+<style>
+    .p2{
+        background-color: blue;
+        width : 60px;
+    }
+</style>
+
+<p class="p3">para</p>
+<span class="p3">para</span>
+
+<style>
+    .p3{
+        background-color: purple;
+        display:inline-block ;
+        width : 60px;
+    }
+</style>
+
+<p class="p4">para</p>
+<span class="p4">para</span>
+
+<style>
+    .p4{
+        background-color: yellow;
+       /* display:none ;  */
+    }
+    /* another attributte for hidding elements is visibility: hidden */
+</style>
+
+<!--********************* CSS POSITIONING ************************-->
+
+<!--css positioning-->
+<!--
+    Some rules :-
+    1.) Content is everything
+    2.) order comes from code
+    3.) children sit on parents
+-->
+
+<!--  position property [static(default), relative, absolute, fixed]   -->
+
+<!-- fixed positioning -->
+<div id="relative"></div>
+
+<style>
+    #relative{
+        background-color: chocolate;
+        height: 60px;
+        width: 60px;
+        position: fixed;
+        top: 0px;             /* top , bottom co-ordinates are imp */
+        right: 0px;
+    }
+</style>
+
+<!-- relative positioning --><br>
+<div id="position"></div>
+
+<style>
+    #position{
+        background-color: blue;
+        height: 200px;
+        width: 200px;
+        position: relative; 
+        /* left: 300px;   */ 
+        /* right: 50px;   */  /* top , bottom , left , right - co-ordinates        */
+        /* top: 150px;    */  /* take that co ordinate and give it a push(margin)  */
+        /* bottom: 300px; */
+    }
+</style><br>
+
+<!-- absolute positioning -->
+<!-- positioning element relative to its parent-->
+<!-- if no parent is given then the body acts as parent-->
+<!--You take the element out of the natural flow-->
+
+<div id="abs">
+    <div id="absolute"></div>
+</div>
+
+<style>
+    #abs{
+        background-color: plum;
+        height: 300px;
+        width: 300px;
+        position: relative;
+    }
+    
+    #absolute{
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 20px;          
+        right: 10px;      
+        top: 80px;    
+        bottom: 30px;  
+    }
+
+</style>
+
+
+<!-- ********************* CSS - WORKING WITH FONTS ********************* -->
+<!--. CSS - Font Styling-->
+<style>
+    body{
+        /* font-family: cursive; */
+        /* fonts in list as per priority*/
+        font-family: 'Space Age',CHAWP,Verdana, Geneva, Tahoma, sans-serif;
+        /* font-family: fantasy;
+        font-family: monospace;
+        font-family: sans-serif;
+        font-family: serif; */
+    }
+</style>
+
+
+
+<!-- CSS - Font SIZING -->
+
+<!-- 16px = 100% = 1em  -->
+<!-- rem = to ignore settings in root tag -->
+
+<body>
+</body>
+
+<p id="sa">title</p>
+<p id="sb">title</p>
+<p id="sc">title</p>
+
+<style>
+
+/* comment the below to see the differnce in font-size for em and % type */
+/* body{
+    font-size: 200%;
+} */
+
+#sa{
+    font-size: 16px;
+}
+
+#sb{
+    font-size: 100%;
+}
+
+#sc{
+    font-size: 1em;
+}
+</style>
+
+<!--px is static and % and em are dynamic-->
+<!-- em and % also depend on font-size set in the body tag-->
+
+<!-- ********************* CSS - FLOAT & CLEAR ********************* -->
+<!-- clear property to prevent text wrapping around image -->
+<!-- Float property for wrapping text around certain element-->
+<img src="images/image.png" alt="good for seo too" width="80" height="80" class="img">
+<p id="pg">text text text text text </p>
+<p id="ag">text text text text text </p>
+<style>
+    .img{
+        float: right;
+    }
+    #ag{
+        clear :right;
+    }
+</style>
+
+

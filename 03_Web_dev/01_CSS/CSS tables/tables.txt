@@ -1,0 +1,40 @@
+span - rowspan
+     - colspan
+
+cell vertical alignment - top, middle, bottom  --> valign
+
+cell horizontal alignment - left, center, right  --> align
+ 
+thead, tbody, tfoot
+
+cell padding
+
+cell spacing - space between cells
+
+width & height 
+
+tables in tables
+
+
+css 
+
+padding
+border-spacing
+border
+align
+width
+height
+
+merge 13 and 14 cell
+start from 13
+and use colspan for cell 13
+
+merge 5, 8 and 11
+start from 5
+and ude rowspan for cell 5
+
+<td>
+  tabble code
+</td>
+
+<td rowspan="3" align="right" valign="bottom">6</td>

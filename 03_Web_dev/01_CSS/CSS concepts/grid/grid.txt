@@ -1,0 +1,200 @@
+CSS grid --> 2-dimensional layout system that can layout elements in rows 
+             and columns at the same time.
+
+grid --> 2d system
+flexbox --> 1d system
+
+grid lines --> columns and rows are made using grid lines
+grid track --> full columns or rows in a group container
+grid area -->  total space surrounded by grid lines
+grid cell -->  single space within our grid
+
+
+container properties
+
+naming the grid lines
+
+grid-template-columns: 
+              [col-start] 1fr 
+              [col-2] 1fr 
+              [col-end]
+
+// create 2 rows, 1st 100px and 2nd 50px 
+grid-template-rows: 100px 50px;
+
+
+grid-auto-columns and grid-auto-rows 
+control row and columns of implicitly defined grid tracks 
+
+grid-auto-rows: 50px;
+
+
+//how things are placed inside grid container
+grid-auto-flow
+
+items are placed in container according to the col.
+grid-auto-flow: column
+
+// place column at start of col. 10 and end on col. 11
+grid-column: 10/11
+grid-auto-flow: dense;
+
+ 
+// defines space between rows/columns
+
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+
+//shorthand for grid-row-gap and grid-column-gap
+grid-gap: 20px 30px;
+grid-gap: 10px
+
+
+// align-items positions the items vertically within the grid cell
+align-items: stretch; //default
+align-items: start;
+align-items: end;
+align-items: center;
+
+// justify-items positions the items horizontally within the grid cell
+justify-items: stretch; //default
+justify-items: start;
+justify-items: end;
+justify-items: center;
+
+// short-hand for align-items and justify items
+place-items: center stretch;
+place-items: center;
+
+
+// specifies how we align our content vertically within our container
+align-content
+
+align-content: start; //default
+align-content: end;
+align-content: center;
+align-content: space-between;
+align-content: space-around;
+align-content: space-evenly;
+
+// specifies how we align our content horizontally within our container
+justify-content
+
+justify-content: start; //default
+justify-content: end;
+justify-content: center;
+justify-content: space-between;
+justify-content: space-around;
+justify-content: space-evenly;
+
+// shorthand for align-content and justify-content
+place-content
+
+place-content: center space-evenly;
+place-content: center;
+
+
+//grid-template-area
+visual representation of our container, 
+works hand in hand with grid-item property 
+
+.header { grid-area: header;}
+.main { grid-area: main; }
+.sidebar { grid-area: sidebar; }
+.footer { grid-area: footer; }
+
+
+grid-template-areas: 
+"header header header"
+"main main sidebar"
+"footer footer footer";
+
+
+//shorthand for setting grid template rows, columns and areas
+grid-template: 
+
+grid-template:
+"header header header" 60px
+"main main sidebar" auto
+"footer footer footer"; 100px
+/[col-start] 1fr 
+ [col-2] 1fr 
+ [col-3] 1fr 
+ [col-end];
+
+
+//shorthand for setting either grid-template-rows and grid-template-columns
+or grid-auto-rows and grid-auto-columns
+
+grid: 50px 200px / repeat(3, 1fr);
+grid: 50px 100px / repeat(3, 1fr);
+
+grid: auto-flow 100px / repeat(3, 1fr);
+
+
+/***** Grid item properties **********/
+
+
+// position our items in container according to the grid column lines
+
+// items start's at 1 and span's accross line no. 3
+grid-column-start: 1;
+grid-column-end: 3;
+
+or 
+
+grid-column-start: col-start;
+grid-column-end: col-3;
+
+// span 3 lines across
+grid-column-end: span 3; 
+
+
+// shorthand for grid-col-start and grid-col-end
+grid-column: col-start / span col-2;
+
+// position our items in container according to the grid row lines
+grid-row-start: 
+grid-row-end:
+
+// items start's at row 2 and span's accross row 5
+grid-row-start: 2
+grid-row-end: 5
+
+
+// shorthand for grid-row-start and grid-row-end
+grid-row: 2/5;
+
+
+//allows us to position a single item
+
+// allows to position a single item vertically
+align-self
+
+align-self:stretch; //default
+align-self:start
+align-self:center
+align-self:end
+
+// allows to position a single item horizontally
+justify-self
+
+justify-self:stretch; //default
+justify-self:start
+justify-self:center
+justify-self:end
+
+// shorthand for align-self and justify-self
+place-self
+
+place-self: center start;
+place-self: center;
+
+
+grid-area short hand for items row-start, col-start as well as row-end and col-end
+
+// item start at (row 2, col 1) and spans across (row 5, col 2)
+grid-area: 2 / 1 / 5 / 2 ;
+
+
+

@@ -1,0 +1,89 @@
+<img src="https://images.unsplash.com/photo-1497752531616-c3afd9760a11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80" alt="">
+<img id="tiger" src="https://images.unsplash.com/photo-1503066211613-c17ebc9daef0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80" alt="">
+<img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" alt="">
+
+<!-- Box-sizing propery -->
+
+<!-- Before box-sizing-->
+
+<!-- <style>
+    img{
+        height: 100px;
+        width:200px;
+        border: 4px solid rebeccapurple ;
+        padding: 20px;
+        margin:30px
+    }
+
+    /* hovering on 1 box changes box size of other elements */
+
+    img:hover{
+        border: 10px solid plum;
+    }
+
+</style> -->
+
+<!-- After box-sizing-->
+<style>
+    img{
+        height: 100px;
+        width:200px;
+        border: 4px solid rebeccapurple ;
+        padding: 20px;
+        margin:30px;
+        box-sizing:border-box;
+        /* default - box-sizing:content-box */
+    }
+
+    /* now hovering on 1 box does not change box size of other elements */
+
+    img:hover{
+        border: 10px solid plum;
+    }
+</style>
+
+
+<!--  background-clip property -->
+<div>
+    <button>Content Box</button>
+    <button>Padding Box</button>
+    <button>Border Box</button>
+  </div>
+
+<h2> LOOK AT ME</h2>
+
+  <style>
+      div button{
+          background-color: olive;
+          border:5px dashed orangered;
+          padding: 20px;
+      }
+      
+      /* Background should extend only till inner content box*/
+      div button:nth-of-type(1){
+          background-clip: content-box;
+      }
+
+      /* Background should extend only till padding box*/
+      div button:nth-of-type(2){
+          background-clip: padding-box;
+      }
+
+      /*default*/
+      /* Background should extend only till border box*/
+      div button:nth-of-type(3){
+          background-clip: border-box;
+      }
+
+      /*experimental*/
+      /* Background should extend only till text*/
+
+      h2{
+        background: linear-gradient(to right, #f5af19, #f12711); 
+        -webkit-background-clip:text;
+        color:transparent;
+        width: 400px;
+        font-size: 50px;
+
+      }
+  </style>

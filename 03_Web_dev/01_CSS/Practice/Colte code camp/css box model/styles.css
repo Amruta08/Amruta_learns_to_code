@@ -1,0 +1,50 @@
+/* 
+THE ONLY PROPERTIES YOU NEED:
+- display 
+- border properties
+- margin properties
+- padding properties
+- width & height
+- background-color
+- color
+- box sizing
+*/
+
+li{
+    display: inline-block;
+}
+
+img{
+    width: 300px;
+    height: 200px;
+    border:solid 5px yellow;
+    background: red;
+    margin: 10px;
+}
+
+img:hover{
+    border-color: aqua;
+}
+
+input, button{
+    display: block;
+}
+
+input{
+    width: 300px;
+    height: 20px;
+    margin: 5px;
+}
+
+button{
+    background-color:steelblue;
+    color: #FFF;
+    width: 310px;
+    height: 20px;
+    margin: 5px;
+}
+
+form{
+    border-top: 5px solid steelblue;
+    width: 300px;
+}

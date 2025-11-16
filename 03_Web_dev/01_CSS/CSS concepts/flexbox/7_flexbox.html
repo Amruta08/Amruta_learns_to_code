@@ -1,0 +1,216 @@
+<section class="container">
+    <div class="box box-1">1</div>
+    <div class="box box-2">2</div>
+    <div class="box box-3">3</div>
+    <div class="box box-4">4</div> 
+    <div class="box box-5">5</div>
+    <div class="box box-6">6</div>
+    <div class="box box-7">7</div>
+    <div class="box box-8">8</div>
+    <div class="box box-9">9</div>  
+</section>
+
+  <style>
+      /* APPEARANCE STYLES*/
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+.box {
+  font-size: 50px;
+  color: white;
+  padding: 10px;
+  text-align:center;
+  font-family: lato;
+  font-weight: 300;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.box-1 {background: #e51400;}
+.box-2 {background: #fa6800;}
+.box-3 {background: #f0a30a;}
+.box-4 {background: #e3c800;}
+.box-5 {background: #a4c400;}
+.box-6 {background: #60a917;}
+.box-7 {background: #00aba9;}
+.box-8 {background: #1ba1e2;} 
+.box-9 {background: #aa00ff;}
+
+ /* LAYOUT STYLES
+.container {
+  display: flex;
+  border: 8px solid black;
+  height: 80vh;
+} */
+  </style>
+
+<style>
+    .container{
+        display: flex;
+        border:8px solid black
+    }
+</style>
+
+<!--*********** row reverse **************-->
+<section class="container1">
+  <div class="box box-1">1</div>
+  <div class="box box-2">2</div>
+  <div class="box box-3">3</div>
+  <div class="box box-4">4</div> 
+  <div class="box box-5">5</div>
+  <div class="box box-6">6</div>
+  <div class="box box-7">7</div>
+  <div class="box box-8">8</div>
+  <div class="box box-9">9</div>  
+</section>
+
+<style>
+  .container1{
+      display: flex;
+      border:8px solid black;
+      /* flex-direction: row-reverse; */
+      /* flex-direction: column; */
+      flex-direction: column-reverse;
+  }
+</style>
+
+<section class="container2">
+  <div class="box box-1">1</div>
+  <div class="box box-2">2</div>
+  <div class="box box-3">3</div>
+  <div class="box box-4">4</div> 
+  <div class="box box-5">5</div>
+  <div class="box box-6">6</div>
+  <div class="box box-7">7</div>
+  <div class="box box-8">8</div>
+  <div class="box box-9">9</div>  
+</section>
+
+<style>
+  .container2{
+      display: flex;
+      border:8px solid black;
+      flex-direction: row;
+      /* flex-direction: row-reverse; */
+      /* flex-direction: column; */
+      /* flex-direction: column-reverse; */
+
+      /* increase width to increase to see flex-direction */
+
+      /* flex-wrap:wrap; */
+      flex-wrap:wrap-reverse;
+  }
+</style>
+
+
+<section class="container3">
+  <div class="box box-1">1</div>
+  <div class="box box-2">2</div>
+  <div class="box box-3">3</div>
+  <div class="box box-4">4</div> 
+</section>
+
+<style>
+  .container3{
+      display: flex;
+      border:8px solid black;
+      /* flex-direction: row; */
+      flex-direction: row-reverse;
+      /* flex-direction: column; */
+      /* flex-direction: column-reverse; */
+
+      flex-wrap:wrap;
+      /* flex-wrap:wrap-reverse;*/
+
+      /* justify-content: flex-end; */
+      /* justify-content: flex-start; */
+      justify-content: center;
+      /* justify-content: space-between; */
+      /* justify-content: space-evenly;  */
+      /* justify-content: space-around; */
+  }
+</style>
+
+
+<section class="container4">
+  <div class="box box-1">1</div>
+  <div class="box box-2">2</div>
+  <div class="box box-3">3</div>
+  <div class="box box-4">4</div> 
+</section>
+
+<style>
+  .container4{
+      display: flex;
+      border:8px solid black;
+      /* flex-direction: row; */
+      height: 80vh;
+      /* flex-direction: row-reverse; */
+      flex-direction: column;
+      /* flex-direction: column-reverse; */
+
+      /* flex-wrap:wrap; */
+      /* flex-wrap:wrap-reverse;*/
+      /* justify-content: center;
+      justify-content: space-between; */
+      
+
+      /* align-items: flex-start; */
+      align-items: flex-end;
+      /* align-items: center; */
+      /* align-items: space-between; */
+      /* align-items: space-around; */
+      /* align-items: space-evenly; */
+      align-items: stretch;
+  }
+</style>
+
+<section class="container5">
+  <div class="box box-1">1</div>
+  <div class="box box-2">2</div>
+  <div class="box box-3">3</div>
+  <div class="box box-4">4</div> 
+  <div class="box box-5">5</div>
+  <div class="box box-6">6</div>
+  <div class="box box-7">7</div>
+  <div class="box box-8">8</div>
+  <div class="box box-9">9</div>  
+</section>
+
+<style>
+  .container5{
+      display: flex;
+      border:8px solid black;
+      flex-direction: row;
+      height: 80vh;
+      /* flex-direction: row-reverse; */
+      flex-direction: column;
+      /* flex-direction: column-reverse; */
+
+      flex-wrap:wrap;
+      /* flex-wrap:wrap-reverse;*/
+
+      justify-content: center;
+      /* justify-content: space-between; */
+      justify-content: flex-start;
+      
+
+      /* align-items: flex-start; */
+      /* align-items: flex-end; */
+      align-items: center;
+      /* align-items: space-between; */
+      /* align-items: space-around; */
+      /* align-items: space-evenly; */
+      /* align-items: stretch; */
+      /* align-items: baseline; */
+
+      align-content: flex-start;
+      align-content: center;
+      align-content: space-between;
+      align-content: space-around;
+      align-content: space-evenly;
+      align-content: stretch;
+      align-content: baseline;
+  }
+</style>
+
+  

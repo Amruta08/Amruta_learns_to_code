@@ -1,0 +1,306 @@
+<body>
+
+<h1>Heading 1</h1>
+<p>Pararagph</p>
+
+<h1>Heading 1</h1>
+<p>Pararagph</p>
+
+<ul>
+    <li>Pink</li>
+    <li>Pink</li>
+    <li>Pink</li>
+    <li>Pink</li>
+</ul>
+
+
+    
+</body>
+
+<!-- Universal selector -->
+<!-- it selects everyting-->
+<style>
+    *{
+        color: blueviolet;
+    }
+</style>
+
+<!-- Element selector -->
+<!-- Selects all elements-->
+
+<style>
+    h1{
+        color:chocolate;
+        font-size: 20px;
+    }
+
+</style>
+
+<!--CLASS SELECTORS-->
+<h1 class="soup">soup</h1>              <!--  class="name"     -->
+                                        <!--  .name {          -->
+                                        <!--   }               -->  
+<style>                                    
+    .soup{
+        color: cornflowerblue;
+    }
+</style>
+
+<!-- Applying 2 class selectors to 1 elemnt-->
+<h1 class="soup corn">soup</h1>             
+
+<style>                                    
+    .soup{
+        color: cornflowerblue;
+    }
+    .corn{
+        font-size: 30px;
+    }
+</style>
+
+
+
+<!--ID SELECTORS-->
+<h1 id="soup2">soup2</h1>              <!--  id="unique name"     -->
+                                       <!--  #unique name {       -->
+                                       <!--   }                   --> 
+<style>                                    
+    #soup2{
+        color: rgb(111, 199, 126);
+        font-size: 100px;
+    }
+</style>
+
+<!--
+            |       class                  |       id                     |
+            | 1. grp related elements      | 1. unique elements only      |
+            | 2. more than 1 element       | 2. only 1 element can        |
+            |   can have same class value  |    have same id value        |
+            | 3. A single element can have | 3. element cannot have more  |
+            |  more than 1 class selectors |   than 1 id selectors        |
+-->
+
+<!-- Selector list-->
+<span>noddles</span>
+<a href="#">Noddles</a>
+
+<style>
+    span, a{
+        color: coral;
+    }
+</style>
+
+
+<!-- Descendant selector-->
+<!-- Selects all <a> inside <li> -->
+
+<li> <a href="#">Link 1</a> </li>
+<li> <a href="#">Link 2</a> </li>
+<li> <a href="#">Link 3</a> </li>
+
+<style>
+li a{
+    color: yellow;
+}
+</style>
+
+
+
+<!-- Adjacent selector -->
+<!-- Selct only paragraphs that are immediately preceded by an <h1>-->
+<h1>Heading 1</h1>
+<p>Paragraph</p>
+
+<h1>Heading 2</h1>
+<p>Paragraph</p>
+
+<style>
+    h1+p{
+        color:red;
+    }
+</style>
+
+
+<!-- Direct child selector -->
+<!-- Selct only <li> that are direct child of <div> element-->
+
+<p>
+lorem ipsum dolor 
+<a href="#">sit amet consectetur 
+<i>adipiscing</i> elit,</a>, 
+sed do eiusmod
+</p>
+
+<style>
+    p > a{
+        color:pink;
+    }
+</style>
+
+
+<!-- Attribute selector -->
+<!--Select all input elements where the type attribute is set to “text”-->
+
+<input type="text">
+<input type="text">
+<input type="text">
+<input type="radio">
+
+<style>
+input[type="text"]{
+    
+    border:2px solid green
+
+}
+</style>
+
+
+<!--Select all links which begain with red-->
+<a href="red book">dead link</a>
+
+<style>
+    a[href^="red"]{
+        color:gray;
+    }
+</style>
+
+<!--Select all input elements with checked attribute -->
+<input type="checkbox">
+<input type="checkbox" checked>
+<input type="checkbox">
+
+<style>
+    input[checked]{
+        width: 100px;
+    }
+</style>
+
+<!--PSUEDOCLASS-->  
+<!--css changes when arrow is placed-->
+
+<style>
+    h1:hover{
+      color: sandybrown;
+    }
+</style>
+
+<style>
+    input[type="text"]:focus{
+        border: 1px solid magenta;
+        outline: none;
+    }
+</style>
+
+<!-- nth of type() pseudo class-->
+
+<ul>
+    <li>Privacy policy</li>
+    <li>Contact</li>
+    <li>Cookies policy</li>
+    <li>Copyright info</li>
+    <li>Privacy policy</li>
+    <li>Contact</li>
+    <li>Cookies policy</li>
+    <li>Copyright info</li>
+</ul>
+
+<style>
+    /* Give second element bg teal*/
+    li:nth-of-type(2n){
+        background-color: teal;
+    }
+
+</style>
+
+<style>
+    /* Give odd element bg yg*/
+    li:nth-of-type(2n+1){
+        background-color: yellowgreen;
+    }
+
+</style>
+
+<style>
+    /* Give 1st element bg orangered*/
+    li:first-of-type{
+        background-color: orangered;
+    }
+
+</style>
+
+<!-- Giving all anchor tags that are 
+visited red color -->
+
+<style>
+    a:visited{
+        color: deeppink;
+    }
+</style>
+
+<!-- :not()-->
+<!-- Select element that is not a paragraph-->
+
+<!-- <h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>heading 5</h5>
+<h6>heading 6</h6> -->
+
+<!-- <style>
+    :not(h1){
+        font-family: CHAWP;
+    }
+</style> -->
+
+<!-- Pseudo elements-->
+<style>
+    h1::first-letter{
+        font-size: 50px;
+        color: olive;
+    }
+</style>
+
+<style>
+    h3+h4::first-letter{
+        font-size: 50px;
+        color: black;
+    }
+</style>
+
+
+<style>
+    p::selection{
+        background-color: cyan;
+        color:white;
+    }
+</style>
+
+
+<style>
+    ::selection{
+        background-color: purple;
+        color:white;
+    }
+</style>
+
+<!-- Before and after helps to insert content-->
+<!-- Animations take advantage of before and after-->
+<style>
+    li::after{
+        content: "-->";
+    }
+</style>
+
+<style>
+    a::before{
+        content: "+|+";
+    }
+</style>
+
+
+
+
+
+
+

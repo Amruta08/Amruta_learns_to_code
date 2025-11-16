@@ -1,0 +1,107 @@
+css variables are used to declare a style once then use it throughout our entire website
+
+// declaring variables
+root refers to html tags
+variables names always begain with --
+
+--variable_name:value;
+:root {
+      --mainColor: orange;
+      --mainFont: arial, sans-serif;
+      --boxShadow: 12px 5px 10px grey;
+}
+
+
+
+// using variables
+property: var(--variable name)
+#logo{
+  color: var(--mainColor);
+}
+
+1. CSS variables are  case sensitive
+
+:root {
+      --mainFont: arial, sans-serif;
+}
+
+// this wont work
+font-family: var(--mainfont);
+
+2. you can use css variables with other variables too
+
+--newColor: red;
+--newBorder: 2px solid var(--newColor)
+
+border: var(--newBorder);
+
+3. you can also write variables inline css
+
+<h2 style = "border: var(--newBorder)">Text</h2>
+
+4. while using css variables you can also give fallback values in case
+you made a typo or if the browser is not able to render the specified css
+
+--newColor: red;
+color: var(--newColor, blue);
+
+5. you can also define css variables for a particular element or scope
+
+#scoped{
+   --scopedFontSize: 30px;
+}
+
+#scoped button{
+    font-size: var(--scopedFontSize);
+
+
+it gets rid of elements
+****************************
+static (default) 
+here, left, right, top, bottom co-orinates will not work
+
+relative
+position: relative
+here, left, right, top, bottom co-orinates will  work
+
+absoulute
+
+fixed -- element will remain in same position even when the page is scrolled
+
+sticky
+position: sticky
+top 20px;
+
+//element will scroll with it's container untill it is at the top of the
+container and will remaini at same position when page is scrolled
+
+top , bottom , left , right co-ordinates        
+/* take that co ordinate and give it a push(margin)  *
+
+z-index: reording and positioning elements in front or behind
+z-index: 1;
+
+
+
+positioning element relative to its parent
+if no parent is given then the body acts as parent
+You take the element out of the natural flow
+color: var(--newColor, blue);
+
+
+<div id="abs">
+    <div id="absolute"></div>
+</div>
+
+
+#abs{
+      position: relative;
+}
+    
+#absolute{
+     position: absolute;
+     left: 20px;          
+     right: 10px;      
+     top: 80px;    
+     bottom: 30px;  
+}

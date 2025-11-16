@@ -1,0 +1,56 @@
+#da{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    
+    /* challenge 1 
+     position: relative; */
+    /* left: 200px; */
+
+    /* display: inline-block;
+    left: 204px; */
+
+    /* challenge 2 */
+    position: absolute;
+    top:208px;
+    left: 208px;
+    
+}
+
+#db{
+    background-color:blue;
+    height: 100px;
+    width: 100px;
+
+    /* challenge 1 
+    position: relative; */
+    /* bottom:100px ; */
+
+    /* display: inline-block;
+    right: 101px; */
+
+    /* challenge 2 */
+    position: absolute;
+    top:108px;
+    left: 108px;
+    
+}
+
+#dc{
+    background-color:yellow;
+    height: 100px;
+    width: 100px;
+
+    /* challenge 1 
+    position: relative; */
+    /* left : 100px;
+    bottom:200px ; */
+
+    /* display: inline-block;
+    right: 105px; */
+
+    /* challenge 2 */
+    position: absolute;
+   
+    /*left: 100px;*/
+}

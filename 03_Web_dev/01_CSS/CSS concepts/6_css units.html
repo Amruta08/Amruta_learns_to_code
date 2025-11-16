@@ -1,0 +1,211 @@
+<!--pixel (px)-->
+<h1 class="hp">Heading 1</h1>
+
+<style>
+    .hp{
+        font-size: 40px;
+    }
+</style>
+
+<!--1in = 96 pixel-->
+
+<h1 class="hi0">Heading 1</h1>
+<h1 class="hi">Heading 1</h1>
+
+<style>
+    .hi0{
+        font-size: 96px;
+    }
+    .hi{
+        font-size: 1in;
+    }
+</style>
+
+<!-- % percentages-->
+
+<section id="gallery">
+<img src="https://images.unsplash.com/photo-1497752531616-c3afd9760a11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80" alt="">
+<img id="tiger" src="https://images.unsplash.com/photo-1503066211613-c17ebc9daef0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80" alt="">
+</section>
+
+<style>
+    #gallery{
+        width: 1000px;
+        border: 3px solid red;
+    }
+
+    /* images take 50% width and height of section */
+    img{
+        width:50%;
+        height: 50%;
+    }
+</style>
+
+<p id="pe">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+
+<style>
+    #pe{
+        background-color: lavender;
+        font-size: 96px;
+
+        line-height: 50%;  /* 50% of 96 px */
+
+        /* same as below */
+        line-height: 48px;
+    }
+</style>
+
+<!-- em -->
+
+<section id ="mystuff">
+    <h2 id="ls">Look at my stuff</h2>
+    <h3 id="ls3">Stuff Stuff ....</h3>
+    <p id="ls4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, necessitatibus. Iste pariatur tempora a ex aliquid magnam totam molestias autem dolorum et molestiae accusamus voluptates, porro iusto? Provident, quam ducimus.</p>
+</section>
+
+<style>
+    #mystuff{
+        font-size: 20px;
+    }
+    
+    #ls{
+        font-size: 3em;
+        /* font-size is 3em = 3 x font-size of parent */
+        /*                  = 3 x 20px = 60px */
+        /* font-size: 60px; */
+
+        border:4px dashed orangered;
+
+        height: 3em; 
+        /* height = 3 x 60px = 180px */
+        /* height:180px; */
+    }
+
+    #ls3{
+        font-size: 2em; 
+        /* font-size = 2 x 20px = 40px */
+        /* font-size: 40px; */
+    }
+
+    #ls4{
+        font-size: 0.5em;
+        /* font-size = 0.5 x 20px = 10px */
+        /* font-size: 10px; */
+
+    }
+
+</style>
+
+<!-- rem -->
+
+<section>
+    <ul>
+        <li>item 1</li>
+        <li>item 1</li>
+        <li> item 1
+            <ul>
+                <li>item 1</li>
+                <li>item 1</li>
+            </ul>
+        </li>
+        <li>item 1</li>
+        <li>item 1</li>
+        <li>item 1
+            <ul>
+                <li>item 1</li>
+                <li>item 1
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 1</li>
+                        <li>item 1</li>
+                    </ul>
+                </li>
+                <li>item 1</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<style>
+
+    html{
+        font-size: 20px;
+    }
+
+    li{
+        /* font-size: 2em;  */
+        /* font-size of nested elements increase rapidly */
+
+        font-size: 2rem; 
+        /* same as below */
+        /* font-size: 40px; */
+    }
+</style>
+
+
+<!-- vh and vw -->
+<section id ="vs">
+    <h1>Welcome to this section</h1>
+</section>
+
+<div id="one"></div>
+<div id="two"></div>
+<div id="three"></div>
+
+<style>
+    #vs{
+        background: linear-gradient(to bottom, magenta, cyan);
+        height: 100vh;
+    }
+
+    #one{
+        height: 50px;
+        background: linear-gradient(to right, red, orange, yellow);
+        width: 100vw;
+    }
+
+    #two{
+        height: 50px;
+        background: linear-gradient(to right, red, orange, yellow);
+        width: 80vw;
+    }
+
+    #three{
+        height: 50px;
+        background: linear-gradient(to right, red, orange, yellow);
+        width: 50vw;
+    }
+</style>
+
+<!-- 16px = 100% = 1em  -->
+<!-- rem = to ignore settings in root tag -->
+
+<body>
+</body>
+
+<p id="sa">title</p>
+<p id="sb">title</p>
+<p id="sc">title</p>
+
+<style>
+
+/* comment the below to see the differnce in font-size for em and % type */
+/* body{
+    font-size: 200%;
+} */
+
+#sa{
+    font-size: 16px;
+}
+
+#sb{
+    font-size: 100%;
+}
+
+#sc{
+    font-size: 1em;
+}
+</style>
+
+<!--px is static and % and em are dynamic-->
+<!-- em and % also depend on font-size set in the body tag-->
