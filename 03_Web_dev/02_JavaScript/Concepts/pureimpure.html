@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function that for some given arguments always produces
+        // the same outcome and one that has no side effects
+        // (when a function changes something outside of itself)
+        
+        // The following is an pure function
+        const sum = (n1,n2) => console.log(n1+n2);
+        sum(5, 2); //will always return 7 & will never change
+        
+        // The following is an impure function
+        const randNum = () => console.log(Math.random())
+        randNum();
+
+        // example 2 - The following function changes the value of Result variable
+        let Result = 0
+        console.log(Result)   //0
+
+        const add = (n1, n2) => {
+            const sum = n1 + n2;
+            Result = sum;
+            return sum;
+        }
+
+        console.log(add(5,5));
+        console.log(Result)   //10
+
+    
+        </script>
+    
+</body>
+</html>

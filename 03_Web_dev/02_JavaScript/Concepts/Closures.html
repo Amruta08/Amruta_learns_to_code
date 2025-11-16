@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Lexical environment :-
+        // Every scope has it's own lexical environment
+        // & consists of :-
+        // Environment record (variables declared within its scope)
+        // Reference to the outer lexical environments
+        // (varaible declared in outside lexical environments )
+
+        const outer = () => {
+            let OUT = "outer";
+            
+            function inner() {
+                let IN = 'inner'
+                console.log(OUT, IN);  //outer inner
+            }
+            inner()
+        }
+        outer()
+
+        // closures
+        // are functions that are bundled together with
+        // the lexical environment within which that function was declared
+        // the function can be invoked from anywhere
+
+        // function that references variables in the outer scope from its inner scope
+        const outer1 = () => {
+            let OUT = "outer";
+            
+            // this function is a closure
+            function inner() {
+                let IN = 'inner'
+                console.log(OUT, IN);  //outer inner
+            }
+            inner()
+        }
+        outer()
+
+        const outer2 = () => {
+            let OUT = "outer";
+            
+            // this function is a closure
+            function inner() {
+                console.log(OUT);  
+            }
+            return inner;
+        }
+        let myFunc = outer2();
+        console.log(myFunc);
+
+        // ƒ inner() {
+        //         console.log(OUT);  
+        //     }
+
+        myFunc();  //outer
+
+        // Tasks
+
+        let crust = 'Crust'
+
+        const earth = () =>{
+            let mantle = 'Mantle'
+
+            const message = () =>{
+                let core = 'Core'
+                console.log(`The Earth is made up of the ${crust}, the ${mantle} and the ${core}`)
+            }
+            return message;
+        } 
+
+        let func = earth()
+        func();
+
+    </script>
+</body>
+</html>

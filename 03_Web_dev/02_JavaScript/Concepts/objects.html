@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+            // JSON - javascript object notation
+            // create bird object without defining class
+            // allows to create objects without defining class
+            var bird = {
+              x: 100,
+              y: 20,
+              color: "blue",
+              eggs: [1, 2, 3, 4],
+
+              fly: function fly() {
+                console.log("bird is flying", this.x, this.y);
+              },
+            };
+
+            // to use object attribute we use this keyword
+
+            // access particular attribute
+            bird.color;
+
+            // change attribute of object
+            // bird.x = 120;
+
+            // for loop to iterate over bird.egg array
+            for (let i = 0; i < bird.eggs.length; i++) {
+              element = bird.eggs[i];
+              console.log(element);
+            }
+
+            // for each loop to iterate over bird.egg array
+
+            bird.eggs.forEach(function (val) {
+              console.log(val);
+            });
+
+            var apple = {
+              taste: "sweet",
+              color: "red",
+            };
+
+            // another way of creating objects
+            function fruit(taste, color) {
+              this.color = color;
+              this.taste = taste;
+            }
+
+            // new keyword
+            let mango = new fruit("sweet", "yellow");
+            let orange = new fruit("sour", "orange");
+
+            // class keyword to create objects
+            // class declaration
+            class Fruitclass {
+              constructor(taste, color) {
+                this.color = color;
+                this.taste = taste;
+              }
+            }
+
+            let kiwi = new Fruitclass("sour", "green");
+
+            // class expression
+            let fruitclass2 = class {
+              constructor(taste, color) {
+                this.color = color;
+                this.taste = taste;
+              }
+            };
+
+            let kiwi2 = new fruitclass2("sour", "green");
+
+
+            for (key in bird) {
+              console.log(`${key} : ${bird[key]}`);
+            }
+
+      //       x : 100 objects.html:83:17
+      // y : 20 objects.html:83:17
+      // color : blue objects.html:83:17
+      // eggs : 1,2,3,4 objects.html:83:17
+      // fly : function fly() {
+      //           console.log("bird is flying", this.x, this.y);
+      //         }
+
+            //higher order functions
+            // functions that recieve an function as an argumrnt or return the function as an output
+    </script>
+  </body>
+</html>

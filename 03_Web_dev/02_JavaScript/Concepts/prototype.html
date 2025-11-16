@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // every object type has a prototype
+      // it's like a map for a object type as it contains the different functionalities of the object
+      // __proto__ will point to prototype
+      // functions will be inside __proto__ property instead of objects directly
+
+      function birdclass(x, y) {
+        this.x = x;
+        this.y = y;
+        this.fly = function () {
+          console.log("bird is flying", this.x, this.y);
+        };
+      }
+
+      // define fly method on the prototype of user
+
+      birdclass.prototype.fly = function () {
+        console.log("bird is flying", this.x, this.y);
+      };
+
+      birdclass.prototype.stoped = function () {
+        console.log("bird has stoped flying", this.x, this.y);
+      };
+
+      let bird = new birdclass(10, 20);
+    </script>
+  </body>
+</html>

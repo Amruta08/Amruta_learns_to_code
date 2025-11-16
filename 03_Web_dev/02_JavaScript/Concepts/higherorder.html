@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // higher order functions
+        // functions which recieve a function has an argument 
+        // or return the function as an output
+        // they can be reused dynamically
+
+        // map() is an higher order function
+        // map method takes an array and maps those values to new array
+        const double = n => n*2;
+        let nums = [1,2,3,4,5];
+        let result = nums.map(double);
+        console.log(result)
+        console.log(...result)
+
+        // addEventListener() is an higher order function in dom
+
+    </script>
+
+    <p id="p"></p>
+    <button id="btn">Click me</button>
+
+    <script>
+        p = document.getElementById('p')
+        btn = document.getElementById('btn')
+
+        // one of its arguments ia an higher order function
+        btn.addEventListener('click', () =>{
+            p.innerText = 'Button was clicked'
+        })
+
+    </script>
+    
+</body>
+</html>

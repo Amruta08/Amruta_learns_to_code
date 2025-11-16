@@ -1,0 +1,48 @@
+<script>
+   
+var a = [];
+var c = 1 ;
+
+function fizzbuzz(){
+
+//    if (c%3===0 && c%5===0) {
+//         a.push("fizzbuzz");   
+//     } else if (c%3===0){
+//         a.push("fizz");   
+//     } else if (c%5===0){
+//         a.push("buzz");   
+//     } else {
+//         a.push(c);
+//     }
+//    c++;
+
+// while (c<=100) {
+//     if (c%3===0 && c%5===0) {
+//         a.push("fizzbuzz");   
+//     } else if (c%3===0){
+//         a.push("fizz");   
+//     } else if (c%5===0){
+//         a.push("buzz");   
+//     } else {
+//         a.push(c);
+//     }
+//    c++;  
+//}
+
+for (let c = 1; c <= 100; c++) {
+    if (c%3===0 && c%5===0) {
+        a.push("fizzbuzz");   
+    } else if (c%3===0){
+        a.push("fizz");   
+    } else if (c%5===0){
+        a.push("buzz");   
+    } else {
+        a.push(c);
+    }
+}
+   console.log(a);
+}
+    
+
+
+</script>

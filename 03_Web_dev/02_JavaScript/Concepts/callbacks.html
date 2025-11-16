@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// callback function - Are functions that is passed into another function as an argument.
+// and are to be executed later, after the outer function is executed 
+// or some event is triggerd
+// to be called back at a later time
+// which is invoked inside outer functions to complete 
+
+// here respondTokey() is an callback function
+document.addEventListener("keypress", respondToKey(event));
+
+function respondToKey(event){
+    console.log("key pressed");
+}
+
+// see the event which triggered the callback function
+document.addEventListener("click", function(event){
+    console.log(event);
+})
+    </script>
+</body>
+</html>

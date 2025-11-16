@@ -1,0 +1,34 @@
+<script>
+    function isLeap(year) {
+// A year is a leap year if it is evenly divisible by 4 ;
+// except if that year is also evenly divisible by 100;
+// unless that year is also evenly divisible by 400.
+    
+    /**************Don't change the code above****************/    
+        
+        //Write your code here. 
+        var val ;
+        if(year%4===0 ){
+            if (year%100===0) {
+                if (year%400===0) {
+                val = ("Leap year."); 
+                } else {
+                val = ("Not leap year.");
+                }  
+            } else {
+                val = ("Leap year.");   
+            }
+        }else {
+            val = ("Not leap year.");
+        } 
+
+        return val;
+        
+    /**************Don't change the code below****************/    
+    
+    }
+
+    var num = prompt("enter a digit no.");
+    var tot = isLeap(num);
+    alert(tot);
+</script>

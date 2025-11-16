@@ -1,0 +1,85 @@
+<script src="javascript/index.js"></script> <!--Adding js in html -->
+                                            <!--should be before end of body tag -->
+
+<script>
+  alert("hello");
+  prompt("Your name:");
+
+  // to declare variables use var keyword   (string , numbers , booleans)
+  var name = "jane";
+  typeof name;
+
+  console.log("hi");
+
+  //string concantenation use +
+  alert(" your name is " + name + " ;) ");
+
+`half of 100 is ${100 / 2}`  //"half of 100 is 50"7
+
+
+  // word length
+  name.length;
+
+  //string slicing
+  name.slice(0, 2);
+
+  //changing case of string
+  name.toUpperCase();
+  name.toLowerCase();
+
+  // declaring function
+  function nam(para) {
+    // code
+    return para * 100; //return keyword
+  }
+
+  // calling function
+  nam(3);
+
+  // math functions
+  Math.floor(3.4);
+  Math.ceil(3.4);
+  Math.round(3.3);
+  Math.pow(3, 2);
+  Math.random(); // 16 decimal random number , never crosses 1
+
+  alert(3 == "3"); //true      == checks only if value is matching
+  alert(3 === "3"); // false    === checks also if datatype is also matching
+
+  // !== (not equal)
+  // > , < , >= , <= , && , ||
+
+  //conditionals
+
+  if (track == "clear") {
+    //go straight
+  } else {
+    //turnright
+  }
+
+  //arrays
+  // different ways to declare array
+  //var eggs = [1,2,3,4] ;
+  //let eggs = [1,2,3,4] ;
+  var eggs = [1, 2, 3, 4];
+
+  // displays array
+  console.log(eggs); // 1,2,3,4
+
+  //displays length of array
+  console.log(eggs.length); //4
+
+  //checks element in array
+  console.log(eggs.includes(3)); //true
+
+  // adds element in the last position
+  console.log(eggs.push(6));
+  console.log(eggs); // 5
+
+  // removes last element
+  console.log(eggs.pop());
+  console.log(eggs); // 1,2,3,4
+
+  // displays random element from array
+  console.log(eggs[Math.floor(Math.random() * eggs.length)]);
+</script>

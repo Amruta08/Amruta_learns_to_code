@@ -1,0 +1,7 @@
+1. Give position:fixed, margin:auto and display:none properties to modal
+2. Use setTimeout and log the phrase model opened after 1.5 sec delay
+3. Display the modal popup after 1.5 sec delay by taking control of 'model' div and changing it's display property to inline
+4. when close button is clicked, close modal by setting it's display property to none
+5. Add name and email address inputs in modal 
+6. Add accept & decline buttons in modal
+

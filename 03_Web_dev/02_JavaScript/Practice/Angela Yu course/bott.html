@@ -1,0 +1,42 @@
+<script>
+    function getMilk(money , costper) {   
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  var bottles = calbol(money ,costper);
+  alert(" no. of bottles to buy is " + bottles);
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+  return  change(money , costper) ;
+  
+}
+
+function calbol(money , costper){
+  var bottles = Math.floor(money/costper) ;
+  return bottles ;
+
+}
+
+function change(money , costper){
+  var bal = money % costper ;
+  return bal ;
+
+}
+
+
+var change = getMilk(5 , 1.5);
+alert ("change is " + change);
+</script>

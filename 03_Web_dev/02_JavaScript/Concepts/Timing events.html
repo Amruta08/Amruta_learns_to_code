@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // JS Timing events
+      // sometimes we want to control when our function is executed
+      // eg. Invoke a function 3sec after function has been triggerd
+      // eg. We may want our function to repeat every second
+
+      // 4 timing methods
+      // set interval
+      // set timeout
+      // clear interval
+      // clear timer
+
+      // setTimeout() 
+      // will execute function after specified seconds
+
+      setTimeout(function sub() {
+        console.log("message");
+      }, 1000);
+
+      //3000ms = 3sec
+      // function will execute after 3sec
+
+      setTimeout(
+        function add(a, b) {
+          console.log(a + b);
+        },2000,2,3);
+
+      function mul(a, b) {
+        console.log(a * b);
+      }
+      setTimeout(mul, 3000, 3, 6);
+
+      // clearTimeout()
+      // will clear setTimeout methods
+      let timer = setTimeout(mul, 3000, 3, 8);
+      clearTimeout(timer);
+
+      // function will execute after 6 sec
+
+      // setInterval()
+      // will repeat the function over and over after a specified amount of time
+      let time = setInterval(mul, 1000, 3, 8);
+
+      // clearInterval()
+       // will clear setInterval methods
+      clearInterval(time);
+
+      //tasks
+
+      // display message after 4sec
+      //   setTimeout(
+      //     function name(user) {
+      //       console.log(`My name is ${user}`);
+      //     },
+      //     4000,
+      //     "tim"
+      //   );
+
+      function name(user) {
+        console.log(`My name is ${user}`);
+      }
+
+      // display messaage every second
+      //   setInterval(name, 1000, "tim");
+
+
+      // display no. 1-10 with a delay of 1 sec between them
+      function count(start, end) {
+        let timer = setInterval(() => {
+            console.log(start);
+            if (start >= end) {
+                clearInterval(timer)   
+            }else{
+                start++
+            }
+            
+        }, 1000);}
+
+      count(1, 10);
+        
+    </script>
+  </body>
+</html>

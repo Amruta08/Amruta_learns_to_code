@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      // A simple login system that will user is logged in or not
+      var userLoggedIN = true;
+
+      //Create a promise
+      // it takes resolve & reject
+      // it needs a function
+      // resolve & reject are callbacks
+      // resolve will be called if promise is successfull
+      // reject will be called if promise is failture
+      var promise = new Promise((resolve, reject) => {
+        // task of promise is to wait for 1sec
+        setTimeout(() => {
+          if (userLoggedIN) {
+            // Promise is resolved
+            // resolve();
+
+            // passing parameters
+            resolve("User Logged In");
+          } else {
+            // Promise is rejected
+            reject();
+          }
+        }, 2000);
+      });
+
+      setTimeout(() => {
+        userLoggedIN = true;
+      }, 500);
+
+      //   // When promise is resolved then execute this
+      //   promise
+      //     .then(() => {
+      //       console.log("User Logged In");
+      //     }) // when promise is rejected execute this
+      //     .catch(() => {
+      //       console.log("User Not Logged In");
+      //     });
+
+      // When promise is resolved then execute this
+      promise
+        .then((successMSG) => {
+          console.log(successMSG);
+        }) // when promise is rejected execute this
+        .catch(() => {
+          console.log("User Not Logged In");
+        });
+
+      // function which returns promise
+      function checkUserLoggedIn() {
+        var promise = new Promise((resolve, reject) => {
+          // task of promise is to wait for 1sec
+          setTimeout(() => {
+            if (userLoggedIN) {
+              // Promise is resolved
+              // resolve();
+
+              // passing parameters
+              resolve("User Logged In");
+            } else {
+              // Promise is rejected
+              reject();
+            }
+          }, 2000);
+        });
+        return promise;
+      }
+
+      checkUserLoggedIn()
+        .then((successMSG) => {
+          console.log(successMSG);
+        }) // when promise is rejected execute this
+        .catch(() => {
+          console.log("User Not Logged In");
+        });
+
+      // callback hell
+      $.ajax({
+        success: function () {
+          $.ajax({
+            success: function () {
+              $.ajax({});
+            },
+          });
+        },
+      });
+
+      //Implementing the above using promises
+      promise.then().then().then().catch();
+
+      // eg:- if user logged in then fetch user then fetch user friends then messages
+
+checkUserLoggedIn()
+.then(fetchUserFeed)
+.then(fetchUserFriends)
+.then(fetchUserMessages);
+    </script>
+  </body>
+</html>

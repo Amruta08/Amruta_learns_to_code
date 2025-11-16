@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // arrow functions
+      // provides a new and shorter way to write anonymous function expressions and are always anonymous
+
+    //   const sum = function (a, b) {
+    //     return console.log(a + b);
+    //   };
+
+    //   sum(5, 5);
+
+    //   // Wrting arrow functions
+    //   const sum2 = (a, b) => {
+    //     return console.log(a + b);
+    //   };
+
+    //   sum2(5, 5);
+
+      // Parenthesis syntax
+    //   if function has 0 or more than 1 parameters then we need parentheses
+    //   if function has 1 parameter only then no need of parentheses
+      const greet = name => {
+        return console.log(`hey ${name}`);
+      };
+
+      greet("user");
+
+    //   // consise function body
+    //   // return keyword is included in 1 line expressions
+
+    //   const game = () => {
+    //     return "Sonic";
+    //   };
+
+    //   // can be reduced to to 1 line expression
+
+    //   const game1 = () => "Sonic";
+
+    //   console.log(game()); //Sonic
+    //   console.log(game1()); //Sonic
+
+    //   const game2 = (title) => {
+    //     let favgame = title;
+    //     return favgame;
+    //   };
+
+    //   console.log(game2("Sonic")); //Sonic
+
+    //   regular functions --> this represents the object that calls the function
+    //   arrow functions --> this represents the owner of the function
+    //   value of this depends on surronding scope
+
+      let game3 = {
+        title: "Sonic the hedehog",
+        related: ["Sonic 2", "Sonic 3", "Sonic & knuckles"],
+        year: 1991,
+        platform: "SEGA",
+        console: "Sega Mega Drive",
+
+        regularFunction() {
+          console.log(`the game is called ${this.title}`);
+          // the game is called Sonic the hedehog
+        },
+
+        arrowFunction: () => {
+          console.log(`the game is called ${this.title}`);
+          // the game is called undefined
+        },
+
+        showRelated: function () {
+          this.related.forEach((relatedGame) => {
+            console.log(`Related game of ${this.title} - ${relatedGame}`);
+          });
+        },
+      };
+
+      game3.showRelated();
+
+    //   user = (name) => {
+    //     return console.log(`My name is ${name}`);
+    //   };
+
+    //   user("pom");
+
+    //   const greeting = () => {
+    //     return console.log(`Hello, how are you?`);
+    //   };
+    //   greeting();
+    </script>
+  </body>
+</html>
