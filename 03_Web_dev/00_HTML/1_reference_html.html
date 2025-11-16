@@ -1,0 +1,242 @@
+<!--heading tags-->
+<h1>heading 1</h1>
+<h2>heading 2</h2>
+<h3>heading 3</h3>
+<h4>heading 4</h4>
+<h5>heading 5</h5>
+<h6>heading 6</h6>
+
+<!--self closing tags-->
+<br>
+<hr>
+
+<!--align text in center-->
+<center>text</center>
+
+<!--html attributes help to make modifications on tags-->
+<hr size="3" noshade="1">
+
+<!--html boilerplate-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body></body>
+<footer></footer>
+</html>
+
+<!--meta tag-->
+<meta charset="utf-8"> <!--page encoding-->
+<meta name="description" content="My personal site"> <!--place where search engines look-->
+
+<!--paragraph tag-->
+<p>sample paragraph</p>
+
+<p title="tooltip">sample paragraph</p>
+<p style="color: orchid;">orchid</p>
+
+<!--Preformatted text-->
+<pre>
+    line 
+    with 
+    breaks gaps and   spaces
+</pre>
+
+<!--text formatting-->
+
+<em>emphasised text</em>
+<i>Italicized text</i>
+
+<strong>strong text</strong>
+<b>  bold text</b>
+
+<small>small text</small>
+<mark>highlighted text</mark>  
+<del>striked text</del>
+<ins>underlined text</ins> 
+
+H<sub>2</sub> <!--subscript-->
+X<sup>2</sup> <!--superscript-->
+
+<q>quoted text</q>
+
+&lt;p&gt; paragraph tag &lt;/p&gt;  <!-- &lt; represents < -->
+&lt;&gt;                            <!-- &gt; represents > -->
+
+<!--To structure and divide content-->
+<div>
+    <p> this para is in div tag</p>
+    <h3>this h3 heading is in div tag</h3>
+</div>
+
+<!-- span tag to modify and style only a partcicular part of a tag-->
+<p>paragraph <span style="color: blue;">tag</span></p>
+
+<!--orderd list-->
+<ol>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+</ol>
+
+<!--orderd list bullets styling-->
+
+<ol type="A" start="10"> <!--A,a,I,i,1-->
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+</ol>
+
+<!--unorderd list-->
+<ul>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+</ul>
+
+<!--unorderd list bullets styling-->
+<ul style = "list-style-type: square;"> 
+<!--disc,circle,square,none-->
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+</ul>
+
+<!--images-->
+<img src="images/image.png" alt="good for seo too" width="80" height="80">
+<img src="images/image.png" alt="candle" style="width:30px; height:40px;">
+
+<!--Image floating--><br>
+<img src="images/rude.gif" style="float:left; width: 50px; height: 50px;">
+<img src="images/read.gif" style="float:right; width:50px; height: 50px;">
+
+<!--anchor tag--><br>
+<a href="link.html">linked text</a>
+
+<!--target attribute--><br>
+<a href="https://www.google.com/" target="_blank">google</a>
+<!--more targets:-self,blank,parent,top-->
+
+<!--images as link--><br>
+<a href="https://www.emoji.com/">
+    <img src="images/smile.gif" height="100" width="100">
+</a>
+
+<!-- create bookmark-->
+<a href="#ab">bookmark</a>   <!--href="#value" (link to bookmarks)-->
+<p id="ab">bookmark</p>      <!--id="value" (define bookmarks)-->
+
+
+<!--tables--><br>
+<table border="5" cellspacing ="5"> <!--table border gives outline of table-->
+                                    <!--cellspacing gives space btw cells-->
+
+<caption>sample table</caption> <!-- title to table-->
+
+    <thead><!--table header-->
+        <tr><!--table row tr-->
+           <th>title 1</th> <!--table head th-->
+           <th>title 2</th>
+        </tr>
+    </thead>
+
+    <tbody> <!--table body-->
+        <tr> 
+            <td>data 1</td> <!--table data td-->
+            <td>data 2</td>
+        </tr>
+    </tbody>
+
+    <tfoot><!--table footer-->
+    </tfoot>
+</table>
+
+<!--column span-->
+<caption>col span</caption>
+<table border="3" style="border-collapse: collapse;">
+    <tr>
+        <th>data</th>
+        <th>data</th>
+        <th>data</th>
+    </tr>
+    <tr>
+        <td>data</td>
+        <td colspan="2">data</td> 
+    </tr>
+    <tr>
+        <td>data</td>
+        <td>data</td>
+        <td>data</td>
+    </tr>
+</table>
+
+<!--row span-->
+<caption>row span</caption>
+<table border="3" style="border-collapse: collapse;" >
+    <tr>
+        <th>data</th>
+        <th>data</th>
+        <th>data</th>
+    </tr>
+    <tr>
+        <td rowspan="2">data</td>
+        <td>data</td>
+        <td>data</td>   
+    </tr>
+    <tr>
+        <td>data</td>
+        <td>data</td> 
+    </tr>
+</table>
+
+<!--button-->
+<button type="button" onclick="alert('alert')">click</button>
+
+<!--html forms--><br>
+<form action="mailto:ap8112002@gmail.com" enctype="text/plain" method="POST">
+   
+    <fieldset> <!--creates outline-->
+    <legend style="text-align: center;">sample form</legend>
+                                        <!--legend creates name for fieldset-->
+
+    <label>Name</label>
+    <input type = "text">
+    
+    <input type="radio" value="html"> <!--value att to add text-->
+    <label>html</label>
+
+    <input type ="submit">
+
+    <!--creates textbox--><br>
+    <textarea rows="10" cols="20">text</textarea>
+
+    </fieldset>
+</form>
+
+
+<!--dropdown menu-->
+
+<label>select fruit </label>
+
+<select size="2" multiple>
+    <option>apple</option>
+    <option>orange</option>
+    <option>cherry</option>
+    <option>kiwi</option>
+    <option>mango</option>
+    <option>berry</option>
+</select> 
+
+
+
+<!--dropdown menu 2-->
+<input list= ut>
+<datalist id="ut">
+    <option value="apple">
+    <option value="berry">
+</datalist> 
+
+
+
