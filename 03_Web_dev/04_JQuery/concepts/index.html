@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <button>Click Me</button>
+    <button>Click Me</button>
+    <button>Click Me</button>
+    <button>Click Me</button>
+    <button>Click Me</button>
+
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+    <img src="" />
+    <a href="https://www.google.com/">google</a>
+    <input type="text" />
+    <style>
+      .big-title {
+        font: 10rem sans-serif;
+        color: yellow;
+      }
+
+      .margin-50 {
+        margin: 50px;
+      }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $("h1").css("color", "red");
+      $("button").css("color", "red");
+
+      // This Will call the code only after the document is ready
+      $(document).ready(function () {
+        $("button").css("color", "red");
+      });
+
+      $("h1").css("font-size");
+      $("h1").addClass("big-title");
+
+      // add multiple classes
+      $("h1").addClass("big-title margin-50");
+
+      // check if a element has particular class
+      $("h1").hasClass("margin-50");
+
+      $("h1").click(function () {
+        $("h1").css("color", "purple");
+      });
+
+      //   for (var i=0; i<5; i++){
+      //     document.querySelectorAll("button")[i].addEventListener("click", function(){
+      //         document.querySelector("h1").style.color = "purple"
+      //     })
+      //   }
+
+      $("button").click(function () {
+        $("h1").css("color", "purple");
+      });
+
+      // show which key got pressed
+      $("input").keypress(function (event) {
+        console.log(event.key);
+      });
+
+      $(document).keypress(function (event) {
+        console.log(event.key);
+      });
+
+      //challenge
+      $(document).keypress(function (event) {
+        $("h1").text(event.key);
+      });
+
+      // another syntax
+      $("h1").on("mouseover", function () {
+        $("h1").css("color", "purple");
+      });
+
+      //Adding & removing elements with jQuery
+
+      // Add a button before h1
+      $("h1").before("<button>New</button");
+      $("h1").after("<button>New</button");
+
+      // add before content in h1 tag
+      // add just after the oppening tag
+      $("h1").prepend("<button>New</button");
+
+      // add just after the content of  h1 tag
+      $("h1").append("<button>New</button");
+
+      $("h1").on("click", function () {
+        $("h1").after("<button>old</button");
+      });
+
+      // remove button element
+      $("button").remove();
+
+      // website animations with jQuery
+      $("button").on("click", function() {
+          $("h1").hide();
+      })
+
+      $("button").on("click", function() {
+          $("h1").toggle();
+      })
+
+      $("button").on("click", function() {
+          // disappear h1 slowly
+          $("h1").fadeOut();
+      })
+
+      // reappear h1 slowly
+      $("h1").fadeIn();
+
+      $("button").on("click", function() {
+          $("h1").fadeToggle();
+      })
+
+      $("button").on("click", function() {
+          // collapses element
+          $("h1").slideUp();
+      })
+
+      // uncollapses elememt
+      $("h1").slideDown();
+
+       $("button").on("click", function() {
+          // collapses element
+          $("h1").slideToggle();
+      });
+
+      //custom animations
+
+      $("button").on("click", function() {
+          // only properties that have numeric values are allowed
+          $("h1").animate({opacity:0.5});
+      });
+
+      $("button").on("click", function() {
+          // only properties that have numeric values are allowed
+          $("h1").animate({margin:"20px"});
+      });
+
+      // chaining animations
+      $("button").on("click", function () {
+        // only properties that have numeric values are allowed
+        $("h1").slideUp().slideDown().animate({ opacity: 0.5 });
+      });
+    </script>
+  </body>
+</html>
