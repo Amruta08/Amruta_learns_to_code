@@ -1,0 +1,87 @@
+document
+document.documentElement  //html tag
+document.head
+document.body
+
+
+window   // browser screen
+document = window.document
+
+screen
+screen = window.screen
+
+
+Event handling - mouse, key, window
+
+adding through attributes
+on_eventname
+
+mouse click :-
+// attribute
+onclick = "alert('Hello')"
+
+<button onclick="alert('Hello')">Click Me</button>
+
+
+adding through DOM
+addEventListener(event, eventHandlerfunction)
+
+addEventListener('click', function(){
+    alert('Hello');
+});
+
+
+document.getElementsById('title').addEventListener('click', function(){
+    alert('Hello');
+});
+
+document.getElementsByClassName('btn').addEventListener('click', function(){
+    alert('Hello');
+});
+
+document.getElementsByClassName('btn')[0].addEventListener('click', function(){
+    alert('Hello');
+});
+
+
+Events
+
+Basic syntax
+onevent
+element.onEvent = functionRef;
+element.addEventListener("event", function())
+
+
+Click Event
+onclick
+
+Scroll Event
+onscroll
+
+Mouse Events
+
+mouseover  - The event occurs when the pointer is moved onto an element, or onto one of its children
+
+mouseout  - The event occurs when a user moves the mouse pointer out of an element, or out of one of its children
+
+onmouseenter  - The event occurs when the pointer is moved onto an element
+
+onmouseleave  - The event occurs when the pointer is moved out of an element
+
+onmousedown  - 	The event occurs when the user presses a mouse button over an element
+
+onmouseup - The event occurs when a user releases a mouse button over an elemen
+
+Key Events
+onkeypress
+onkeydown      - occurs when user is pressing a key
+onkeyup
+
+
+detect keypressed
+
+Event  Bubbling
+
+
+
+

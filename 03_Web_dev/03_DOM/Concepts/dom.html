@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My website</title>
+    <link rel="stylesheet" href="DOMstyles.css">
+</head>
+<body>
+    <h1 id ="title"><strong>Hello</strong></h1>
+    <input type="checkbox">
+    <button class ="btn">Click Me</button>
+    <ul id =list>
+      <li class="item">
+        <a href="https://www.google.com">Google</a>
+      </li>
+      <li class="item">Second</li>
+      <li class="item">Third</li>
+    </ul>
+
+    <script>
+
+        // DOM - catalogs the web page into individual objects
+        //       that we can select & manipulate
+        // On loading the web page the browser coverts html elements
+        // and their relationshipts into DOM tree structure 
+        // objects in DOM have properties & Methods
+        // Methods are associated with objects
+
+
+        //selecting elements
+        document;  // outputs entire HTML file
+        document.firstElementChild;  // outputs everthing inside <html>
+        document.firstElementChild.firstElementChild;   // outputs <head> part
+        document.firstElementChild.lastElementChild;    // outputs <body> part
+        document.firstElementChild.lastElementChild.firstElementChild;   // outputs heading
+        document.firstElementChild.lastElementChild.lastElementChild.lastElementChild;
+        
+        
+        // select object that has input selector
+        // can be used to select tags, id's & classes
+        document.querySelector("input")
+        document.querySelector("ul").lastElementChild  // selects last li item
+        document.querySelector("#title");  // select element with id title
+        document.querySelector("li a");  // select a tag inside li
+        document.querySelector("li.item");  // returns first list item
+        document.querySelectorAll("#list .item");  // return array of all list items
+
+
+
+        // select elements with particular tag name
+        document.getElementsByTagName("li");   // returns array of list items
+        document.getElementsByTagName("li").length  // returns no. of li elements
+        // 3
+
+        // select elements based on class name
+        document.getElementsByClassName("btn")  // return array of items that have btn class
+
+        // select elements based on id name
+        document.getElementById("title")   // returns item that has title id
+
+
+
+        // manipulate the html
+
+        // textContent --> Change the text inside
+        document.querySelector("h1").textContent = "Helllo";
+
+        // innerHTML --> Gives the html inside the element tag
+        // it helps to add html code inide of particular tag
+        var heading = document.firstElementChild.lastElementChild.firstElementChild;
+        heading.innerHTML = 'Good day'  // changes h1 to hello from 'Good day'
+
+        document.querySelector("h1").innerHTML = "<em>Good Bye</em>"
+
+
+        heading.style.color = "red";   // changes color of h1 to red
+
+        // making object do things
+        document.querySelector("input").click();   // ticks the checkbox
+
+        // changes color of last list item to purple
+        document.getElementsByTagName("li")[2].style.color='purple';  
+
+        // change color of btn to red
+        document.getElementsByClassName("btn")[0].style.color = 'red';
+
+        // change text of h1 to "Good Bye"
+        document.getElementById("title").innerHTML = "Good Bye";
+
+        document.querySelectorAll("#list .item")[1].style.color = "blue";
+
+        // manipulating & changing styles
+        document.querySelector("h1").style.fontSize = "2rem";
+
+        document.querySelector("h1").style.backgroundColor = "purple";
+
+        document.querySelector("h1").style.visibility = "hidden"  // hide's element
+
+        document.querySelector(".btn").style.backgroundColor = "yellow"
+
+        // https://www.w3schools.com/jsref/dom_obj_style.asp
+        // shorturl.at/evwCR
+
+
+        // Gives list of classes attached to button
+        document.querySelector("button").classList;
+
+        // Add classes to class list
+        document.querySelector("button").classList.add("invisible");
+
+        // we can use this to specify styles of classes in css 
+        // rather than in js
+
+        // Remove classes from class list
+        document.querySelector("button").classList.remove("invisible");
+
+        // toggle class
+        // will remove class if applied
+        // will apply class if not applied
+        document.querySelector("button").classList.toggle("invisible");
+
+        document.querySelector("h1").classList.add("huge");
+
+
+        // manipulating the attributes of element
+
+        // gives list of attributes
+        document.querySelector("a").attributes;
+        
+       // access a particular attribute
+        document.querySelector("a").getAttribute("href");
+
+        // change value of attribute
+        document.querySelector("a").setAttribute("href", "#");
+
+    </script>
+
+    
+    
+</body>
+</html>

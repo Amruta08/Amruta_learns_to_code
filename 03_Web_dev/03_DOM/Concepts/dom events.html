@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My website</title>
+    <link rel="stylesheet" href="DOMstyles.css" />
+  </head>
+  <body>
+    <h1 id="title"><strong>Hello</strong></h1>
+    <input type="checkbox" />
+    <!-- <button class ="btn" onclick="alert('Hello')">Click Me</button> -->
+    <button class="btn">Click Me</button>
+    <ul id="list">
+      <li class="item">
+        <a href="https://www.google.com">Google</a>
+      </li>
+      <li class="item">Second</li>
+      <li class="item">Third</li>
+    </ul>
+
+    <script>
+      const message = () => alert("Event triggered");
+
+      //click event
+      // document.getElementById("title").onclick = message;
+
+      document.getElementsByClassName("btn")[0].addEventListener("click", 
+        function () {
+          alert("button pressed");
+        });
+
+      // When mouse is hovered on h1 which has an id of title
+      document.getElementById("title").onmouseenter = message;
+      document.getElementById("title").onmouseleave = message;
+      document.getElementById("title").onmousedown = message;
+      document.getElementById("title").onmouseup = message;
+
+      document.getElementById("title").onkeypress = message;
+      // document.getElementById("title").onkeydown = message;
+      // document.getElementById("title").onkeyup = message;
+
+      document.addEventListener('keypress', function(event){
+        alert(event.keyCode);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+document;
+document.firstElementChild;
+document.firstElementChild.firstElementChild;
+document.firstElementChild.lastElementChild;
+document.firstElementChild.lastElementChild.firstElementChild;
+Var heading = document.firstElementChild.lastElementChild.firstElementChild
+heading.innerHTML = "TEXT" ;
+heading.style.color = " Red " ;
+document.querySelector("input").click();
+
+document.getElementsByTagName("li");
+document.getElementsByTagName("li").style.color = "purple" ; //Gives error
+document.getElementsByTagName("li")[2].style.color = "purple" ; //Correct way
+document.getElementsByTagName("li").length ;
+document.getElementsByClassName("btn") ;
+document.getElementsByClassName("btn")[0].style.color = "red"  ;
+document.getElementById("title");
+document.getElementById("title"). innerHTML = "TRCT";
+document.querySelector("h1");
+document.querySelector("#title"); //id
+document.querySelector(".btn"); //class
+document.querySelector("li     a");
+document.querySelector("li.item");
+document.querySelector(" #list a");
+document.querySelector(" #list . item");
+//If the are many classes you get only the first class
+
+In case you want all so you have to use :-
+document.querySelectorAll(" #list . item");
+// You get the Array
+
+document.querySelectorAll(" #list . item")[2].style.color = "blue" ;
+
+document.querySelector("h1").style.fontSize ="10rem";
+1.)Camel casing 
+2.)Value are represented in strings
+
+document.querySelector("button"). classList ;
+>> ["Btn" , value : "btn"]
+document.querySelector("button").classList.add("invisible);
+document.querySelector("button").classList.remove("invisible");
+document.querySelector("button").classList.toggle("invisible");
+document.getElementById("title").textContent = "GOOD BYE";
+document.querySelector("h1").innerHTML="<em>good bye</em>';
+
+Manipulation of element attributes:-
+
+document.querySelector("a"). attributes;
+document.querySelector("a"). getAttribute("href");
+document.querySelector("a"). setAttribute("href" ,  "https://www.bing.com");

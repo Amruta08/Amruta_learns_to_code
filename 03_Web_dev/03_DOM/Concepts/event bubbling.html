@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="document">
+        <p>Document</p>
+        <div id="outer">
+            <p>outer</p>
+            <!-- <div id="inner">
+                <p>inner</p>
+            </div> -->
+        </div>
+    </div>
+
+    <style>
+        p{
+            text-align: center;
+            font-weight: bold;
+        }
+        #document{
+            height : 200px;
+            width: 200px;
+            background-color: red;
+        }
+
+        #outer{
+            height: 100px;
+            width: 100px;
+            margin: 40px;
+            background-color: blue;
+        }
+
+        #inner{
+            height: 50px;
+            width: 50px;
+            margin: 23px;
+            background-color: green;
+
+        }
+    </style>
+
+    <script>
+document.getElementById('document').addEventListener('click', function(){
+    alert('Document clicked')
+})
+
+document.getElementById('outer').addEventListener('click', function(event){
+    alert('outer div clicked')
+    event.stopPropagation();
+})
+
+        // document.getElementById('inner').addEventListener('click', function(){
+        //     alert('inner div clicked')
+        // })
+    </script>
+</body>
+</html>
