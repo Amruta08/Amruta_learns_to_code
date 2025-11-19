@@ -1,0 +1,71 @@
+db.products.insertOne(
+    {
+        _id: 3,
+        name: "Rubber",
+        price: 1.30,
+        stock: 43,
+        reviews: [
+            {
+                authorName: "Sally",
+                rating: 5,
+                reiew: "Best rubber ever!"
+            },
+            {
+                authorName: "John",
+                rating: 5,
+                reiew: "Awesome rubber!"
+            },
+        ]
+    }
+)
+
+db.products.insertMany([
+        {
+            _id: 1,
+            name: "pen",
+            price: 1.20   
+        },
+        {
+            _id: 2,
+            name: "pencil",
+            price: 0.80 
+        }
+    ])
+
+db.products.updateOne(
+   {_id:2}, 
+   {$set: {reviews:[
+            {
+                authorName: "Sally",
+                rating: 5,
+                reiew: "Best rubber ever!"
+            },
+            {
+                authorName: "John",
+                rating: 5,
+                reiew: "Awesome rubber!"
+            },
+        ]
+   }}
+)
+
+
+// Products collection
+{
+    _id: 1,
+    name: "pen",
+    price: 1.20   
+}
+
+{
+    _id: 2,
+    name: "pencil",
+    price: 0.80   
+}
+
+// Orders collection
+{
+    orderNumber: 3243,
+    productsOrdered: [1,2]
+}
+
