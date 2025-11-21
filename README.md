@@ -51,7 +51,16 @@ My Personal coding notebook
 |   |   \---concepts
 |   |       \---Asynchronus JS
 |   +---05_Node & express
+|   |   +---1_express-basics
+|   |   +---2_express-demo
+|   |   |   +---config
+|   |   |   +---folder_name
+|   |   |   \---views
+|   |   +---3_weather api
+|   |   \---4_ejs demo
+|   |       \---views
 |   +---06_MongoDB & Mongoose
+|   |   \---MongoDB & Mongoose demo
 |   +---07_React Js
 |   |   \---Reference
 |   |       +---01_introduction-to-jsx
@@ -96,26 +105,21 @@ My Personal coding notebook
 |   |       |   \---src
 |   |       |       \---components
 |   |       +---14_react-devtools
-|   |       |   +---.codesandbox
 |   |       |   +---public
 |   |       |   \---src
 |   |       |       \---components
 |   |       +---15_mapping-components
-|   |       |   +---.codesandbox
 |   |       |   +---public
 |   |       |   \---src
 |   |       |       \---components
 |   |       +---16_mapping-components-practice
-|   |       |   +---.codesandbox
 |   |       |   +---public
 |   |       |   \---src
 |   |       |       \---components
 |   |       +---17_map-filter-reduce
-|   |       |   +---.codesandbox
 |   |       |   +---public
 |   |       |   \---src
 |   |       +---18_es6-arrow-functions
-|   |       |   +---.codesandbox
 |   |       |   +---public
 |   |       |   \---src
 |   |       |       \---components
@@ -132,6 +136,7 @@ My Personal coding notebook
 +---05_Blockchain
 |   \---Solidity
 +---06_AI_ML_DS
+|   +---00_Maths_for_ML
 |   +---01_ML
 |   |   +---00_DS Libraries
 |   |   |   +---matplotlib
@@ -222,4 +227,5 @@ My Personal coding notebook
 |       \---Pinecone
 +---07_Deployment
 \---08_Tools
+
 ```
