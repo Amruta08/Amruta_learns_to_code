@@ -147,7 +147,14 @@ My Personal coding notebook
 |   |   |   +---00_Working_with_csv
 |   |   |   +---01_Working_with_json_&_sql
 |   |   |   +---02_Working_with_API's
-|   |   |   \---03_Web_scrapping
+|   |   |   +---03_Web_scrapping
+|   |   |   |   +---0_Web_scrapping_using_beautiful_soup
+|   |   |   |   \---1_Web_scrapping_using_scrapy
+|   |   |   |       +---blogscraper
+|   |   |   |       |   \---spiders
+|   |   |   |       \---bookscraper
+|   |   |   |           \---spiders
+|   |   |   \---04_Other_file_types (avro, parquet etc.)
 |   |   +---02_Basic questions
 |   |   +---03_Univariate & Multivariate analysis
 |   |   +---04_ydata_profiling
@@ -227,5 +234,6 @@ My Personal coding notebook
 |       \---Pinecone
 +---07_Deployment
 \---08_Tools
+
 
 ```
