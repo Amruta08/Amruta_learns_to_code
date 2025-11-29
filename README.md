@@ -15,16 +15,13 @@ My Personal coding notebook
 |   |   |   +---flexbox
 |   |   |   +---grid
 |   |   |   +---Responsive
-|   |   |   \---styles
 |   |   +---CSS tables
 |   |   |   +---table 1
 |   |   |   \---table 2
 |   |   \---Practice
 |   |       +---Angela Yu course
 |   |       |   +---Css margin chall
-|   |       |   |   \---styles
 |   |       |   +---Css pos chall
-|   |       |   |   \---styles
 |   |       |   +---debug
 |   |       |   \---food fansite
 |   |       \---Colte code camp
@@ -38,7 +35,6 @@ My Personal coding notebook
 |   |       +---10days_hackerrank
 |   |       +---Angela Yu course
 |   |       \---cookie
-|   |           \---images
 |   +---03_DOM
 |   |   +---Concepts
 |   |   \---Examples
@@ -46,91 +42,40 @@ My Personal coding notebook
 |   |       +---dot
 |   |       +---motion
 |   |       \---Moving pic
-|   |           \---img
 |   +---04_JQuery
 |   |   \---concepts
 |   |       \---Asynchronus JS
 |   +---05_Node & express
 |   |   +---1_express-basics
 |   |   +---2_express-demo
-|   |   |   +---config
-|   |   |   +---folder_name
-|   |   |   \---views
 |   |   +---3_weather api
 |   |   \---4_ejs demo
-|   |       \---views
 |   +---06_MongoDB & Mongoose
 |   |   \---MongoDB & Mongoose demo
 |   +---07_React Js
 |   |   \---Reference
 |   |       +---01_introduction-to-jsx
-|   |       |   +---public
-|   |       |   \---src
 |   |       +---02_jsx-code-challenge
-|   |       |   +---public
-|   |       |   \---src
 |   |       +---03_javascript-expressions-in-jsx
-|   |       |   +---public
-|   |       |   \---src
 |   |       +---04_javascript-expressions-in-jsx-practice
-|   |       |   +---public
-|   |       |   \---src
 |   |       +---05_jsx-attributes-and-styling
-|   |       |   +---public
-|   |       |   \---src
 |   |       +---06_inline-styling-in-jsx
-|   |       |   +---public
-|   |       |   \---src
 |   |       +---07_react-styling-practice
-|   |       |   +---public
-|   |       |   \---src
 |   |       +---08_react-components
-|   |       |   +---public
-|   |       |   \---src
 |   |       +---09_react-components-practice
-|   |       |   +---public
-|   |       |   \---src
-|   |       |       \---Components
 |   |       +---10_es6-import-export-and-modules
-|   |       |   +---public
-|   |       |   \---src
 |   |       +---11_es6-import-export-practice
-|   |       |   +---public
-|   |       |   \---src
 |   |       +---12_react-props
-|   |       |   +---public
-|   |       |   \---src
 |   |       +---13_react-props-practice
-|   |       |   +---public
-|   |       |   \---src
-|   |       |       \---components
 |   |       +---14_react-devtools
-|   |       |   +---public
-|   |       |   \---src
-|   |       |       \---components
 |   |       +---15_mapping-components
-|   |       |   +---public
-|   |       |   \---src
-|   |       |       \---components
 |   |       +---16_mapping-components-practice
-|   |       |   +---public
-|   |       |   \---src
-|   |       |       \---components
 |   |       +---17_map-filter-reduce
-|   |       |   +---public
-|   |       |   \---src
 |   |       +---18_es6-arrow-functions
-|   |       |   +---public
-|   |       |   \---src
-|   |       |       \---components
 |   |       +---19_conditional-rendering
-|   |       |   +---public
-|   |       |   \---src
-|   |       |       \---components
 |   |       \---20_conditional-rendering-practice
-|   |           +---public
-|   |           \---src
-|   |               \---components
+|   +---Python_web_frameworks
+|   |   \---flask
 |   \---Reference_cheatsheets
 +---04_Databases
 +---05_Blockchain
@@ -150,10 +95,6 @@ My Personal coding notebook
 |   |   |   +---03_Web_scrapping
 |   |   |   |   +---0_Web_scrapping_using_beautiful_soup
 |   |   |   |   \---1_Web_scrapping_using_scrapy
-|   |   |   |       +---blogscraper
-|   |   |   |       |   \---spiders
-|   |   |   |       \---bookscraper
-|   |   |   |           \---spiders
 |   |   |   \---04_Other_file_types (avro, parquet etc.)
 |   |   +---02_Basic questions
 |   |   +---03_Univariate & Multivariate analysis
@@ -181,40 +122,27 @@ My Personal coding notebook
 |   |   |   +---10_Feature_Construction_and_splitting
 |   |   |   +---11_Column transformer
 |   |   |   \---12_Pipelines
-|   |   |       \---models
 |   |   +---09_ML_Algorithms_using_sklearn
 |   |   |   +---01_Linear_regression
-|   |   |   |   \---data
 |   |   |   +---02_Gradient_Descent
-|   |   |   |   \---data
 |   |   |   +---03_Logistic_regression
-|   |   |   |   \---data
 |   |   |   +---04_Decision_tree
-|   |   |   |   \---data
 |   |   |   +---05_SVM
 |   |   |   +---06_Random_Forest
 |   |   |   +---07_K_Fold_cross_validation
 |   |   |   +---08_Clustering
-|   |   |   |   \---data
 |   |   |   +---09_Naive_Bayes
-|   |   |   |   \---data
 |   |   |   +---10_Hyperparameter_Tunning
 |   |   |   +---11_L1&L2_regularization
 |   |   |   +---12_KNN_Classification
 |   |   |   +---13_PCA
-|   |   |   |   \---data
 |   |   |   \---14_Bagging
-|   |   |       \---Data
 |   |   \---10_Applying_All_Algorithms
 |   |       +---Classification
-|   |       |   \---data
 |   |       +---Clustering
-|   |       |   \---data
 |   |       +---Mixed
 |   |       \---Regression
 |   +---02_NLP
-|   |   \---data
-|   |       \---books
 |   +---Agentic AI
 |   |   \---Langraph
 |   +---Kaggle learning
@@ -229,11 +157,9 @@ My Personal coding notebook
 |   |   \---Streamlit
 |   |       +---Mortgage_calculator
 |   |       \---Streamlit basics
-|   |           \---pages
 |   \---Vector databases
 |       \---Pinecone
 +---07_Deployment
 \---08_Tools
-
 
 ```
