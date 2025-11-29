@@ -160,6 +160,6 @@ My Personal coding notebook
 |   \---Vector databases
 |       \---Pinecone
 +---07_Deployment
+|   \---Docker_&_kubernetes_setup_for_flask
 \---08_Tools
-
 ```
