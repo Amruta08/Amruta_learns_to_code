@@ -156,7 +156,7 @@ My Personal coding notebook
 |   +---Model_Deployment_UI
 |   |   \---Streamlit
 |   |       +---Mortgage_calculator
-|   |       \---Streamlit basics
+|   |       \---Streamlit_concepts
 |   \---Vector databases
 |       \---Pinecone
 +---07_Deployment
