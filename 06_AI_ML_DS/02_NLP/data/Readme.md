@@ -1,2 +1,0 @@
-movie.csv
-speech.csv
