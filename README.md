@@ -121,7 +121,8 @@ My Personal coding notebook
 |   |   |   +---09_Handling mixed variables
 |   |   |   +---10_Feature_Construction_and_splitting
 |   |   |   +---11_Column transformer
-|   |   |   \---12_Pipelines
+|   |   |   +---12_Pipelines
+|   |   |   \---13_Handling_imbalanced_data
 |   |   +---09_ML_Algorithms_using_sklearn
 |   |   |   +---01_Linear_regression
 |   |   |   +---02_Gradient_Descent
@@ -142,7 +143,31 @@ My Personal coding notebook
 |   |       +---Clustering
 |   |       +---Mixed
 |   |       \---Regression
-|   +---02_NLP
+|   +---02_DL
+|   |   +---00_Basic neural network
+|   |   +---01_Activation_functions
+|   |   +---02_Loss_functions
+|   |   +---03_NN_from_scratch
+|   |   +---04_Gradient_descent_in_DL
+|   |   +---05_Tensorboard
+|   |   +---06_CPU_&_GPU_benchmarking
+|   |   +---07_ANN
+|   |   +---08_Dropout
+|   |   +---09_TF_Data_pipeline
+|   |   +---10_Quantization
+|   |   \---11_Autoencoders
+|   +---03_NLP
+|   |   +---0_Regular expressions
+|   |   +---1_Text_Preprocessing
+|   |   +---2_Text_Representation_basic_techniques
+|   |   +---3_Text_Representation_using_embeddings
+|   |   +---4_Text_Classification
+|   |   +---5_BERT
+|   |   \---6_RNN_LSTM_GRU
+|   +---04_CV
+|   |   +---01_CNN_Basic
+|   |   +---02_CNN_Architecture
+|   |   \---03_YOLO_obj_detection
 |   +---Agentic AI
 |   |   \---Langraph
 |   +---Kaggle learning
@@ -156,7 +181,7 @@ My Personal coding notebook
 |   +---Model_Deployment_UI
 |   |   \---Streamlit
 |   |       +---Mortgage_calculator
-|   |       \---Streamlit_concepts
+|   |       \---Streamlit concepts
 |   \---Vector databases
 |       \---Pinecone
 +---07_Deployment
