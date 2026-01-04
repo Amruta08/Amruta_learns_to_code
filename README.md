@@ -137,7 +137,8 @@ My Personal coding notebook
 |   |   |   +---11_L1&L2_regularization
 |   |   |   +---12_KNN_Classification
 |   |   |   +---13_PCA
-|   |   |   \---14_Bagging
+|   |   |   +---14_Bagging
+|   |   |   \---15_Boosting
 |   |   \---10_Applying_All_Algorithms
 |   |       +---Classification
 |   |       +---Clustering
@@ -162,8 +163,9 @@ My Personal coding notebook
 |   |   +---2_Text_Representation_basic_techniques
 |   |   +---3_Text_Representation_using_embeddings
 |   |   +---4_Text_Classification
-|   |   +---5_BERT
-|   |   \---6_RNN_LSTM_GRU
+|   |   +---5_Text_Clustering
+|   |   +---6_BERT
+|   |   \---7_DL_Algos_for_NLP
 |   +---04_CV
 |   |   +---01_CNN_Basic
 |   |   +---02_CNN_Architecture
