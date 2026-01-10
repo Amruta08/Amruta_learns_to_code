@@ -148,15 +148,19 @@ My Personal coding notebook
 |   |   +---00_Basic neural network
 |   |   +---01_Activation_functions
 |   |   +---02_Loss_functions
-|   |   +---03_NN_from_scratch
-|   |   +---04_Gradient_descent_in_DL
-|   |   +---05_Tensorboard
-|   |   +---06_CPU_&_GPU_benchmarking
-|   |   +---07_ANN
-|   |   +---08_Dropout
-|   |   +---09_TF_Data_pipeline
-|   |   +---10_Quantization
-|   |   \---11_Autoencoders
+|   |   +---03_Autograd_pytorch
+|   |   +---04_NN_from_scratch
+|   |   +---05_Gradient_descent_in_DL
+|   |   +---06_NN_module_pytorch
+|   |   +---07_Dataset_&_DataLoader_pytorch
+|   |   +---08_CPU_&_GPU_benchmarking
+|   |   +---09_Tensorboard
+|   |   +---10_ANN
+|   |   +---11_Dropout
+|   |   +---12_Hyperparameter_tunning_in_DL
+|   |   +---13_TF_Data_pipeline
+|   |   +---14_Quantization
+|   |   \---15_Autoencoders
 |   +---03_NLP
 |   |   +---0_Regular expressions
 |   |   +---1_Text_Preprocessing
