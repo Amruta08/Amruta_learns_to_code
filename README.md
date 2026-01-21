@@ -171,6 +171,7 @@ My Personal coding notebook
 |   |   +---6_BERT
 |   |   \---7_DL_Algos_for_NLP
 |   +---04_CV
+|   |   +---00_CV_using_OpenCV
 |   |   +---01_CNN_Basic
 |   |   +---02_CNN_Architecture
 |   |   \---03_YOLO_obj_detection
