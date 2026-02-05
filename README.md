@@ -186,6 +186,7 @@ My Personal coding notebook
 |   |       +---5_Dropout and batch Normalization
 |   |       \---6_Binary Classification
 |   +---Model_Deployment_UI
+|   |   +---Gradio
 |   |   \---Streamlit
 |   |       +---Mortgage_calculator
 |   |       \---Streamlit concepts
