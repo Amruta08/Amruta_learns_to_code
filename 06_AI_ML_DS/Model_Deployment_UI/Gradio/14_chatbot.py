@@ -51,7 +51,6 @@ def chat_handler(message, history, image):
             {"role": "user", "content": message},
             {"role": "assistant", "content": "⚠️ Please upload an image first."}
         ])
-        #history.append((message, "Please upload an image first"))
         return history, history, image, None # One history for state, One history for chatbot
     operation = parse_operation(message)
     
@@ -60,7 +59,6 @@ def chat_handler(message, history, image):
             {"role": "user", "content": message},
             {"role": "assistant", "content": "❓ Try: original, grayscale, or edges."}
         ])
-        #history.append((message, "Try: *original*, *grayscale*, or *edges*."))
         return history, history, image, None
     
     processed_img, fig = process_img(image, operation)
@@ -69,7 +67,6 @@ def chat_handler(message, history, image):
         {"role": "user", "content": message},
         {"role": "assistant", "content": f"✅ Applied {operation} operation."}
     ])
-    #history.append((message, f"✅ Applied **{operation}** operation."))
     
     return history, history, processed_img, fig
 
@@ -98,4 +95,5 @@ with gr.Blocks() as demo:
         outputs=[chat_state, chatbot, image_output, histogram]
     )
     
+
 demo.launch()
