@@ -1,0 +1,4 @@
+# character ia stored in ASCII code (0-127)
+# if A is assingned  to a var 65 is stored instead of A
+
+# use %zu or %lu while printing sizeof function .

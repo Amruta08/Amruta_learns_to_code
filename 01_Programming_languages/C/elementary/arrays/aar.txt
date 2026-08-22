@@ -1,0 +1,49 @@
+int arr[n] = {1,2,...n};
+int i ;
+array declaration:-
+data_type name[size];
+
+ACCESS:-
+
+for(i=0;i<n;i++)
+{
+   printf("%d\n",arr[i]);
+}
+**********************************************
+TAKE FROM USER :-
+
+for(i=0;i<n;i++)
+{ 
+   scanf("%d",&mark[i]);
+}
+
+**********************************************
+REVERSE :-
+
+for(i=n-1;i>=0;i--)
+{
+   printf("%d ",marks[i]);
+}
+
+**********************************************
+SUM :-
+
+sum = sum + marks[i]
+
+AVERAGE :-
+
+avg = sum/n
+
+**********************************************
+LARGEST:-
+for ( i = 0; i <= n-1 ; i++)
+{
+  if (marks[0] < marks[i])
+  {
+      marks[0] = marks[i] ;
+  } 
+}
+
+
+
+
