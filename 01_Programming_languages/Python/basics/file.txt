@@ -1,0 +1,7 @@
+It is designed to provide much cleaner syntax 
+and exception handling when you are working with code. 
+That explains why it’s good practice to use them 
+with a statement where applicable. 
+This is helpful because using this method any files 
+opened will be closed automatically after one is done, 
+so auto-cleanup

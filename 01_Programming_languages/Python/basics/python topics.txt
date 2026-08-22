@@ -1,0 +1,53 @@
+print function
+string manipulation
+errors
+input function
+variables
+data types
+type function
+type conversion
+Number converstion
+operators
+bitwise operator
+Number manipulation
+booleans
+python interactive help
+f-strings
+if/else
+logical operators
+conditionals
+date and time
+randomization
+lists
+sets
+tuples
+nested lists
+for loop
+range function
+functions
+while loops
+function with inputs
+dictionaries
+nested lists and dictionaries
+Functions with outputs
+Scope
+Object oriented programming
+prettytable module
+building your own classes
+turtle module
+turtle event listeners
+class inheritance
+file read/write
+working with csv files
+pandas
+list comprehensions
+dictionary comprehension
+tkinter
+arguments with default values
+args and kwargs
+
+
+
+
+
+

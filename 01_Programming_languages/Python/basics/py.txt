@@ -1,0 +1,27 @@
+objects are any real world entities that have methods and attributes
+eg:- waiter  
+
+attributes :- are things that an object has
+eg:- 
+is_holding_plate = True
+is_responsible = [4,5,6]
+
+methods :- are things that an object can do 
+def take_order(table, order):
+    # takes order to chef  
+def take_payment(amount):
+    # add money to
+
+classes - blueprint of objects
+
+accesing methods and attributes
+
+creating object example
+
+Creating our own classes
+constructor
+
+class inheritance
+
+prettytable module
+turtle module
