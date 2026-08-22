@@ -1,0 +1,15 @@
+1. Breakdown the problem:-
+breakdown the large problem into small problems,
+and tackle them one by one
+
+2. Start with the easiest
+look at those problems and create a todo list 
+and start with the easiest
+
+3. Turn the problem into comments
+Take the problem and turn it into comments
+
+4. Write code --> Run code --> Fix code --> Repeat 
+
+5. Next task
+After completing one task goto next task
