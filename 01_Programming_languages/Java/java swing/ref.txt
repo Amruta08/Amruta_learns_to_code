@@ -1,0 +1,35 @@
+mai.java = basic java gui
+mas.java = gui label's
+pas.java = gui panels
+Myrame.java, mad.java = gui buttons
+ba.java = simple gui program
+
+lay.java = java borderlayout
+b.java = flow layout
+grid.java = grid layout
+
+l.java,LaunchPage.java, NewWindow.java = Open a new gui window
+jop.java = Joptionplane
+
+
+p.java, Myp.java = gui practice
+
+
+boilerplate code for java :
+
+public class ref {
+    public static void main(String[] args){
+
+    }
+}
+
+input code :-
+import java.util.Scanner;
+Scanner input =  new Scanner(System.in);
+int no = input.nextInt();
+input.close();
+
+output code :-
+System.out.println();
+System.out.print();
+
