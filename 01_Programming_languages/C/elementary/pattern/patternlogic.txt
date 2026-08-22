@@ -1,0 +1,147 @@
+634,635
+
+n=4
+row = 1 to n
+column = 1 to row 
+row            column
+  1 |*       | 1
+  2 |**      | 1 2
+  3 |***     | 1 2 3
+  4 |****    | 1 2 3 4
+
+n - user
+r = 1; r <= n ; r++
+c = 1; c <= r ; c++ //printf("*")
+
+1
+12      n - user
+123     r = 1; r <= n ; r++
+1234    c = 1; c <= r ; c++ //printf("%d",c)
+
+  | OR |
+
+n - user
+r = 1; r <= n ; r++
+k = 1
+c = 1; c <= r ; c++ //printf("%d",k++)
+
+A      n - user
+AB     char k
+ABC    r = 1; r <= n ; r++
+ABCD   k = 'A'
+ABCDE  c = 1; c <= r ; c++ //printf("%c",k++)
+
+
+1
+22       n - user
+333      r = 1; r <= n ; r++
+4444     c = 1; c <= r ; c++ //printf("%d",r)
+
+  | OR |
+
+n - user
+r = 1; r <= n ; r++
+k = r
+c = 1; c <= r ; c++ //printf("%d",k)
+
+
+A         char k
+BB        k = 'A'
+CCC       n - user
+DDDD      r = 1; r <= n ; r++
+EEEEE     c = 1; c <= r ; c++ //printf("%c",k)
+          k++
+
+   
+1       n - user
+23      k = 1 
+456     r = 1; r <= n ; r++
+78910   c = 1; c <= r ; c++ //printf("%d",k++)
+
+A         char k
+BC        k = 'A'
+DEF       n - user
+GHIJ      r = 1; r <= n ; r++
+KLMNO     c = 1; c <= r ; c++ //printf("%c",k++)
+
+
+row k
+ 1  1
+ 2  01    at 
+ 3  101   odd(r) places k = 1 
+ 4  0101  even(r) places k = 0
+ 5  10101
+
+n - user
+r = 1; r <= n ; r++
+k =(r%2==0)?0:1;  
+c = 1; c <= r ; c++ 
+//printf("%d",k)
+k=(k==0)?1:0; 
+
+***** r = n; r >= 1 ; r--
+****  c = 1; c <= r ; c++
+***   //printf("*")
+**
+*
+
+    
+* 
+**      
+***    r = 1; r <= n ; r++
+****   c = 1; c <= r ; c++ //printf("*")
+***** 
+****   r = n-1; r>=1 ; r--
+***    c = 1; c <= r ; c++ //printf("*")
+**     
+*
+
+    * r = 1; r <= n; r++
+   ** s = 1; s <= n-r; s++ //printf(" ")
+  *** c = 1 ; c <= r ; c++ //printf("*")
+ ****
+*****
+
+
+*****   r = n; r >= 1; r--
+ ****   s = 1; s <= n-r; s++ //printf(" ")
+  ***   c = 1 ; c <= r ; c++ //printf("*")
+   **
+    *
+
+
+    * r = 1; r <= n; r++
+   ** s = 1; s <= n-r; s++ //printf(" ")
+  *** c = 1 ; c <= r ; c++ //printf("*")
+ ****
+*****
+ **** r = n-1; r >= 1; r--
+  *** s = 1; s <= n-r; s++ //printf(" ")
+   ** c = 1 ; c <= r ; c++ //printf("*")
+    *
+
+
+    *     r = 1 ; r <= n ; r++
+   ***    s = 1 ; s <= n-r; s++ //printf(" ")
+  *****   c1= 1 ; c1 <= r; c1++ //printf("*")
+ *******  c2= 1 ; c2 <= r-1;c2++ //printf("*")
+*********
+
+
+*********  r = n ; r >= 1 ; r--
+ *******   s = 1 ; s <= n-r; s++ //printf(" ")
+  *****    c1= 1 ; c1 <= r; c1++ //printf("*")
+   ***     c2= 1 ; c2 <= r-1;c2++ //printf("*")
+    *
+
+    *    r = 1 ; r <= n ; r++
+   ***   s = 1 ; s <= n-r; s++ //printf(" ")
+  *****  c1= 1 ; c1 <= r; c1++ //printf("*")
+ ******* c2= 1 ; c2 <= r-1;c2++ //printf("*")
+*********
+ ******* r = n-1 ; r >= 1 ; r--
+  *****  s = 1 ; s <= n-r; s++ //printf(" ")
+   ***  c1= 1 ; c1 <= r; c1++ //printf("*")
+    *   c2= 1 ; c2 <= r-1;c2++ //printf("*")
+
+

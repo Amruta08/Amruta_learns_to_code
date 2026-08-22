@@ -1,0 +1,69 @@
+
+SYNTAX :-
+
+Return_type function_name (paramater list)
+{
+    function body ;
+}
+
+Eg :-
+int add(int a,int b)
+ {
+    int c;
+    c = a + b;
+    printf("sum is %d",c);
+ }
+
+TYPES OF FUNCTION DEFINATION
+
+1.) no arg , no return type
+
+void add()
+ {
+    int c;
+    c = a + b;
+    printf("sum is %d",c);
+ }
+
+2.) no arg , with  return type
+
+int add()
+ {
+    int a = 10 , b = 20 , c ;
+    c = a + b;
+    return c ;
+ }
+
+3.)arg , no return type
+
+ void add(int a,int b)
+ {
+    int c;
+    c = a + b;
+    printf("sum is %d",c);
+ }
+
+ 4.) with arg , with return type
+
+ int add(int a,int b)
+ {
+    int c;
+    c = a + b;
+    return c ;
+ }
+
+FUNCTION DECLARTION :-
+Return_type function_name (paramater list);
+
+CALLING THE FUNCTION:-
+
+func_name(para_list);
+Add(a,b);
+
+ACTUAL AND FORMAL ARGUMENTS:-
+actual arguments - arguments listed in the function calling statement
+formal arguments - arguments used in func declaration
+
+call by value :- actual values users entered in parameter list.
+              no effect on argument.
+call by reference :- copying address instead of value.

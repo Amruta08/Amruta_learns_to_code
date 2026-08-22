@@ -1,0 +1,16 @@
+structures :- collection of data of different type
+
+Declaration :-  
+struct tagname  | eg :-
+{               |  struct book
+  member 1;     |  {
+  member 2;     |   char n[20] , au[10];
+  ........      |   int year ;
+};              |   float price;
+                |  };
+
+structure variables will not 
+
+struct tagname var1 , var2;
+eg :-
+e

@@ -1,0 +1,40 @@
+FACTORIAL :-
+fact , i = 0
+fact=fact*i
+
+X TABLE :-
+j = 1 ; i - input 
+"%d x %d = %d\n" , j , i , i*j 
+
+ODD NO :-
+j = 1 ; i - input 
+if (j % 2 == 1)
+  printf("%d" , j) 
+
+SUM OF NO :-       
+sum = 0 ; i - input  
+
+j=1 ; j <= i ; j++  
+        or          
+j=i ; j >= 1 ; j--  
+                     
+sum=sum + j          
+                     
+SUM OF SQUARE :-
+sum = sum + j*j
+
+RECIPROCAL SUM :-
+sum = sum + 1/j
+
+
+FIBBONACI
+a = 0 , b = 1
+
+printf("%d\t" , a) 
+result = a + b 
+a = b 
+b = result 
+
+
+
+
