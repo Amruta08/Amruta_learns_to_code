@@ -1,0 +1,65 @@
+Formalities - declaring constants, variables
+            - input 
+            - ouput
+
+main imp - logic of working code
+
+//selection
+for ( i=1, i<=n-1, i++){
+   min = i-1
+   for (j=i, j<=n-1, j++){
+       if(a[j]<a[min]){
+          min = j
+    }
+    temp = a[i-1]
+    a[i-1] = a[min]
+    a[min] = temp
+
+}
+
+//insertion
+for( i=1, i<n, i++){
+   temp = a[i]
+   j=i-1
+   while(temp<a[j] && j>=0){
+      a[j+1] = a[j]
+      j --
+   }
+ a[j+1] = temp 
+}
+
+//merge sort
+
+void ms(int a[], low, high){
+   if(low!= high){
+   int mid = floor(low+high)/2)
+   ms(a, low, mid)
+   ms(a, mid+1, high)
+   cb(a, low, mid, high)
+}
+
+void cb(a[], low, mid, high){
+
+  while(i<=mid && j<=high){
+   if(a[i] <= a[j]){
+    temp[k++] = a[i++]
+   }else{
+     temp[k++] = a[j++]
+  }
+
+ while(i<=mid){
+ temp[k++] = a[i++]
+ )
+
+while(j<= high){
+  temp[k++] = a[j++]
+}
+
+for(i=low; i<=high; i++){
+a[i] = temp[i];
+}
+
+}
+
+
+  

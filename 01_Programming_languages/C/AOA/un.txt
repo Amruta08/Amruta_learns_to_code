@@ -1,0 +1,102 @@
+int Board[16], count;
+int main() {
+  int i, j;
+  Queen(1, 4);
+  return 0;
+}
+
+void Queen(int row,int n)
+{
+
+int col;
+
+for(col = 1; col<<=n; ++col)
+
+{
+
+if(PlaceQueen(row, col))
+
+{
+
+Board[row] = col; // Place queen in 'row' row and in 'col' column
+
+if(row == n) // All rows are scanned - stop
+
+{
+
+DisplaySolution(n); // Print the solution
+
+}
+
+else // Check for the row
+
+{
+
+Queen (row + 1, n);
+
+}}}}
+
+int PlaceQueen(int row,int column) {
+
+int i;
+
+for(i=1;i<=row-1; ++i)
+
+{
+
+if(Board[i] == column) // Column conflict
+
+{
+
+return 0;
+
+}
+
+else
+
+{
+
+if(abs(Board[i]-column) == abs(i-row)){
+
+// Diagonal conflict
+
+return 0;
+}
+}
+}
+
+return 1; //No conflicts
+}
+
+
+void DisplaySolution(int n){
+
+int i,j;
+
+printf("\n\nSolution %d:\n\n", ++count);
+
+for(i=1;i<=n; ++i) 
+printf("\tR%d", i);
+
+for(i=1;i<=n; ++i)
+{
+printf("\n\nC%d",i); 
+for(j=1; j<=n; ++j)
+{
+
+if(Board[i] == j)
+{
+
+printf("\tQ"); // Cell with queen
+}
+
+else
+{
+
+printf("\t."); // Cell without queen
+}
+}
+}
+
+printf("\n\n");
+}
