@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+    <script>
+
+        // Scene
+        const scene = new THREE.Scene();
+
+        // Camera
+        const camera = new THREE.PerspectiveCamera(
+            75,
+            window.innerWidth/window.innerHeight,
+            0.1,
+            1000
+        );
+        camera.position.set(0, 40, 15);
+        camera.lookAt(0, 0, 0);
+
+        // Renderer
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Lighting
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); 
+        scene.add(ambientLight);
+        
+        const sunLight = new THREE.DirectionalLight(0xffffff, 1);
+        sunLight.position.set(10, 20, 10); 
+        scene.add(sunLight);
+
+        // Create plane geometry
+        const geometry = new THREE.PlaneGeometry(10, 10, 50, 50); // width, height, widhtSegments, heightSegments
+
+        // Accessing Vertex data
+        // Every geometry stores vertices inside: geometry.attributes.position
+        const vertices = geometry.attributes.position.array;
+        console.log(vertices);
+
+        // Modify height (z value)
+        // We will apply f(x, y) = 0.05(x^4 - 16*x^2 + 5.x) + 0.2*y^2 + 10
+        // vertices[i] -> x co-ordinate
+        // vertices[i+1] -> y co-ordinate
+        // vertices[i+2] -> z co-ordinate
+
+        for(let i=0; i<vertices.length; i+=3){
+            let x = vertices[i];
+            let y = vertices[i+1];
+
+            // Apply equation
+            vertices[i+2] = 0.05 * (Math.pow(x, 4) - 16*Math.pow(x,2) + 5*x) + 0.2*Math.pow(y, 2) + 10;
+        }
+
+        // Update geometry
+        geometry.attributes.position.needsUpdate = true;  // tell three.js, we modifed the plane
+        geometry.computeVertexNormals(); // Recalculate normals to adjust lighting
+
+        // Create mesh
+        const material = new THREE.MeshStandardMaterial({color:0x3366ff});
+        const landscape = new THREE.Mesh(geometry, material);
+        landscape.rotation.x = -Math.PI/2; // Rotate to make height vertical
+        scene.add(landscape);
+
+        // Animation Loop
+        function animate(){
+            requestAnimationFrame(animate);
+            landscape.rotation.z += 0.005;
+            renderer.render(scene, camera);
+        }
+
+        animate();
+
+    </script>
+    
+</body>
+</html>

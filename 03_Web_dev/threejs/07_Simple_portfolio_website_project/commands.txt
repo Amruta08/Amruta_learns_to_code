@@ -1,0 +1,3 @@
+commands to execute
+npm i
+npm run dev

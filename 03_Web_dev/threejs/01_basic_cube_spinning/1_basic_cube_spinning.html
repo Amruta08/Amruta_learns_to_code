@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+    <script>
+        // Scene holds all the things you want to see - objects, lights and cameras
+        const scene = new THREE.Scene();
+
+        // Camera is your viewpoint, like eyes watching the scene
+        // PerspectiveCamera mimics how our eye see, which objects looking smaller when they are far away
+        const camera = new THREE.PerspectiveCamera(
+            75,           // Field of view in degrees
+            window.innerWidth/window.innerHeight, // Aspect ratio to match window size
+            0.1,         // Near clipping plane: close limit
+            1000         // Far clipping plane: far limit
+        );
+        camera.position.z = 5 // Move the camera 5 units to see the cube
+
+        // Renderer draws the scene on the screen
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight); // set renderer to full window size
+        document.body.appendChild(renderer.domElement); // Add renderer's canvas element to the page body
+
+        // A mesh is a visible object in the scene and is made up of 2 parts :-
+        // 1. Geometry - Defines the shape or structure of the object, like box, sphere, etc.
+        // 2. Material - Defines how the obj. looks on the surface like color, texture, shininess
+        const geometry = new THREE.BoxGeometry(1, 1, 1); // create cube geometry with 1x1x1 size
+        const material = new THREE.MeshBasicMaterial({color: 0x00ff00}); // create a basic material with color (green)
+        const cube = new THREE.Mesh(geometry, material); // combine geometry and material into a mesh
+        scene.add(cube) // add cube to scene
+
+        // Three.js coordinate system :-
+        // X-axis (left-right)
+        // Y-axis (up-down)
+        // Z-axis (in-out, towards or away from you)
+
+        // Animations are created by updating your scene many times per second
+        function animate(){
+            requestAnimationFrame(animate); // calls animate() repeatedly
+
+            // Rotate the cube along x and y axes
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
+            
+            renderer.render(scene, camera); // Draw the scene
+        }
+
+        animate(); // Start the animation
+    </script>
+    
+</body>
+</html>
