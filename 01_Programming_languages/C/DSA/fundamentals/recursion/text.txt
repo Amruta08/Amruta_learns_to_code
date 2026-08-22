@@ -1,0 +1,6 @@
+recursion :- function which calls itself to solve smaller version of its task
+             until base case is reached .
+
+major cases - base case - terminating condition
+            - recursive case - problem gets divided
+
